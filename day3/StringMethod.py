@@ -40,34 +40,106 @@ s.capitalize()
 'Good morning'
 
 # 4.title()  -> syntax --> var_name.title() or "String".title()
->>> # first word 1st character be uppercase and second word 2nd character be uppercase  (if in given statement the mut
->>> #multiple words then all words first charater be in uppercase
->>> 
->>> a = "hi hello how are you"
->>> a.title()
+# first word 1st character be uppercase and second word 2nd character be uppercase  (if in given statement the mut
+#multiple words then all words first charater be in uppercase
+
+a = "hi hello how are you"
+a.title()
 'Hi Hello How Are You'
->>> 
->>> b="good morning "
->>> b.title()
+
+b="good morning "
+b.title()
 'Good Morning '
->>> 
->>> #string data type is a immutable data type
->>> # immutable data type -->
->>> # here we can't change orginal object but we can do the modification.
->>> 
->>> 
->>> a =" evening" #--> orginal object
->>> a.upper() #--> modification data
+
+#string data type is a immutable data type
+# immutable data type -->
+# here we can't change orginal object but we can do the modification.
+
+
+a =" evening" #--> orginal object
+a.upper() #--> modification data
 ' EVENING'
->>> 
->>> a
+
+a
 ' evening'
->>> #it gives only orginal object because of immutable data type
->>> 
->>> 
->>> m="pyThOn" #--> orginal object
->>> m.captialize() #--> modification data
+#it gives only orginal object because of immutable data type
+
+
+m="pyThOn" #--> orginal object
+m.captialize() #--> modification data
 Traceback (most recent call last):
   File "<pyshell#56>", line 1, in <module>
     m.captialize() #--> modification data
 AttributeError: 'str' object has no attribute 'captialize'. Did you mean: 'capitalize'?
+m.swapcase() #string data type is a immutable data type
+'PYtHoN'
+
+
+# 6. count()  --->>
+
+#substring is nothing it is part of string
+#in count() startindex and endindex always optional
+#in the given string what character are passing and what character are repated
+#count will check only single character are repeated
+
+# Ex
+y='Good Morning'
+y.count("Good")
+1
+
+y.count("d")
+1
+
+y.count("o")
+3
+
+y.count("n")
+2
+2
+2
+
+y.count("O")
+0
+
+
+y.count("o",0,3)
+2
+
+
+r = "Python class and Morning session"
+
+len(r)
+32
+
+r.count("s")
+5
+>>> 
+>>> r.count("o" , 0,32)
+3
+>>> 
+>>> r.count("n",0,26)
+4
+>>> 
+>>> r.count("class")
+1
+>>> 
+>>> r.count("a",10,19)
+1
+>>> r.count("a",10,20)
+1
+>>> 
+>>> 
+>>> r.count("")
+33
+>>> r.count(" ")
+4
+>>> 
+>>> r.count("i")
+2
+>>> 
+>>> r.count("s",10,32)
+5
+>>> 
+>>> 
+>>> #count()  -> syntax ---> variableName.count('substring',startindex,endindex+1)
+>>> #write a program to check in the given string vowels or consonat
