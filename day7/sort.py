@@ -93,28 +93,71 @@ n=[89,45,70,6,40,23,38,99,13,6]
 n.sort()
 n
 [6, 6, 13, 23, 38, 40, 45, 70, 89, 99]
->>> 
->>> n.sort(reverse=False)
->>> n
+
+n.sort(reverse=False)
+n
 [6, 6, 13, 23, 38, 40, 45, 70, 89, 99]
->>> 
->>> n.sort(reverse=True)
->>> n
+
+n.sort(reverse=True)
+n
 [99, 89, 70, 45, 40, 38, 23, 13, 6, 6]
->>> 
->>> 
->>> l=['G','b','e','T','w','x','K','L','v']
->>> l.sort()
->>> l
+
+
+l=['G','b','e','T','w','x','K','L','v']
+l.sort()
+l
 ['G', 'K', 'L', 'T', 'b', 'e', 'v', 'w', 'x']
->>> l.sort(key=len,reverse=False)
->>> l
+l.sort(key=len,reverse=False)
+l
 ['G', 'K', 'L', 'T', 'b', 'e', 'v', 'w', 'x']
->>> l.sort(key=len,reverse=True)
->>> l
+l.sort(key=len,reverse=True)
+l
 ['G', 'K', 'L', 'T', 'b', 'e', 'v', 'w', 'x']
->>> len(l)
+len(l)
 9
->>> 
->>> len(n)
+
+len(n)
 10
+
+dir(list)
+['__add__', '__class__', '__class_getitem__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__iadd__', '__imul__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+
+
+to concat two list
+SyntaxError: invalid syntax
+
+#to concat two list
+
+a=[1,2,3,4,5]
+b=[10,20,30,40,50]
+
+a+b
+[1, 2, 3, 4, 5, 10, 20, 30, 40, 50]
+
+#Unpacking--->(*)
+>>> 
+>>> print(*a)
+1 2 3 4 5
+>>> 
+>>> print(*b)
+10 20 30 40 50
+>>> 
+>>> x=[*a,*b]
+>>> x
+[1, 2, 3, 4, 5, 10, 20, 30, 40, 50]
+>>> 
+>>> 
+>>> 
+>>> 
+>>> #sequence Data Type:-->
+>>> 
+>>> #which data type we are doing indexing and slicing that type of dat
+>>> #we can call it as a sequence Data Type
+>>> 
+>>> #ex:-> string,list,Tuple
+>>> 
+>>> #iterable:-> all collection data type we can call it as a iterable.
+>>> 
+>>> #ex:-> string, list, tuple,set dictionary
+>>> 
+>>> #all sequence data type are iterable
