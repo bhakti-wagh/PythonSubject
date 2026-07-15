@@ -284,33 +284,33 @@ x.pop(10)
 x
 {20: 200, 30: 300, 40: 400, 50: 500}
 
->>> x.pop(300)
+x.pop(300)
 Traceback (most recent call last):
   File "<pyshell#215>", line 1, in <module>
     x.pop(300)
 KeyError: 300
->>> x.pop(300,"key is not present")
+x.pop(300,"key is not present")
 'key is not present'
->>> 
->>> 
->>> 
->>> 
->>> #2. popitem():--> varname.popitem()--> it will atomatically delete last element
->>> #--< and output will show in Tuple Form
->>> 
->>> x
+
+
+
+
+#2. popitem():--> varname.popitem()--> it will atomatically delete last element
+#--< and output will show in Tuple Form
+
+x
 {20: 200, 30: 300, 40: 400, 50: 500}
->>> 
->>> x.popitem()
+
+x.popitem()
 (50, 500)
->>> x
+x
 {20: 200, 30: 300, 40: 400}
->>> 
->>> 
->>> 
->>> 
->>> h={1:2,4:5,8:9}
->>> g=h
+
+
+
+
+h={1:2,4:5,8:9}
+g=h
 
 id(g)
 2417573625600
@@ -340,31 +340,31 @@ g
 h.update({"abc":"def"})
 h
 {1: 2, 4: 10, 8: 20, 'abc': 'def'}
-g
+>>> g
 {1: 2, 4: 10, 8: 20, 'abc': 'def'}
-
-
-
-
-#Pipline Operator(|)-> it will add two variables
-
-h|g
+>>> 
+>>> 
+>>> 
+>>> 
+>>> #Pipline Operator(|)-> it will add two variables
+>>> 
+>>> h|g
 {1: 2, 4: 10, 8: 20, 'abc': 'def'}
-
-
-#Unpacking--< **
-x={**a,**b}
+>>> 
+>>> 
+>>> #Unpacking--< **
+>>> x={**a,**b}
 Traceback (most recent call last):
   File "<pyshell#265>", line 1, in <module>
     x={**a,**b}
 NameError: name 'b' is not defined
-x={**a,**h}
-x
+>>> x={**a,**h}
+>>> x
 {24: 500, 23: 600, 22: 700, 21: 800, 20: 900, 19: 'setdefualtvalue', 1: 2, 4: 10, 8: 20, 'abc': 'def'}
-
-
-
-
+>>> 
+>>> 
+>>> 
+>>> 
 
 
 #fromkeys()
