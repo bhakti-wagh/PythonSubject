@@ -48,33 +48,33 @@ TypeError: can only concatenate list (not "tuple") to list
 
 
 
->>> #Substraction operation :->
->>> 
->>> 45-18
+#Substraction operation :->
+
+45-18
 27
->>> 
->>> True-False
+
+True-False
 1
->>> 
->>> 45.6-85.6
+
+45.6-85.6
 -39.99999999999999
->>> 
->>> 'hiiii'-'hii' #substraction operation don't support concatination
+
+'hiiii'-'hii' #substraction operation don't support concatination
 Traceback (most recent call last):
   File "<pyshell#40>", line 1, in <module>
     'hiiii'-'hii' #substraction operation don't support concatination
 TypeError: unsupported operand type(s) for -: 'str' and 'str'
->>> 
->>> # list ,tuple data type also not support to substraction operation
->>> 
->>> {45,18,7}-{10,7,19}
+
+# list ,tuple data type also not support to substraction operation
+
+{45,18,7}-{10,7,19}
 {18, 45}
->>> #in set 1 is result if any common element the it will remove and set1 result
->>> 
->>> {'hi','hello'}-{'Good','Morning'}#always set1 is result
+#in set 1 is result if any common element the it will remove and set1 result
+
+{'hi','hello'}-{'Good','Morning'}#always set1 is result
 {'hello', 'hi'}
->>> 
->>> 1*1
+
+1*1
 1
 
 45.8*35.6
@@ -199,3 +199,28 @@ SyntaxError: multiple statements found while compiling a single statement
 20
 10*3
 30
+>>> # list ,tuple data type also not support to substraction operation
+>>> true/false
+Traceback (most recent call last):
+  File "<pyshell#111>", line 1, in <module>
+    true/false
+NameError: name 'true' is not defined. Did you mean: 'True'?
+>>> false/true
+Traceback (most recent call last):
+  File "<pyshell#112>", line 1, in <module>
+    false/true
+NameError: name 'false' is not defined. Did you mean: 'False'?
+>>> 
+>>> Faslse/True
+Traceback (most recent call last):
+  File "<pyshell#114>", line 1, in <module>
+    Faslse/True
+NameError: name 'Faslse' is not defined. Did you mean: 'False'?
+>>> False/True
+0.0
+>>> 
+>>> True/False
+Traceback (most recent call last):
+  File "<pyshell#117>", line 1, in <module>
+    True/False
+ZeroDivisionError: division by zero
