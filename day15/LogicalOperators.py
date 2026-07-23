@@ -76,10 +76,10 @@ False
 
 not 5
 False
->>> 
->>> not ''
+
+not ''
 True
->>> 
+
 >>> not 0
 True
 >>> 
@@ -102,3 +102,7 @@ False
 SyntaxError: unexpected indent
 >>> 12 and 7 or 56
 7
+>>> 
+>>> not set()
+True
+>>> 
