@@ -76,14 +76,14 @@ False
 
 not 5
 False
->>> 
->>> not ''
+
+not ''
 True
->>> 
->>> not 0
+
+not 0
 True
->>> 
->>> not 'vii'
+
+not 'vii'
 False
 >>> 
 >>> not {}
@@ -102,12 +102,12 @@ False
 SyntaxError: unexpected indent
 >>> 12 and 7 or 56
 7
-
-not set()
+>>> 
+>>> not set()
 True
-
-
-{} and ''
+>>> 
+>>> 
+>>> {} and ''
 {}
-{} or ''
+>>> {} or ''
 ''
