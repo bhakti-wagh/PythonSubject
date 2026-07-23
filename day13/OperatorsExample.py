@@ -1,4 +1,4 @@
-Python 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)] on win32
+    iPython 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)] on win32
 Enter "help" below or click "Help" above for more information.
 
 # Arithmatic Operator
@@ -17,7 +17,7 @@ x+y
 
 (6,4)+(7,8)
 (6, 4, 7, 8)
-
+[]
 #For collection data type it will give concatination as response
 
 (3+2j)+(4+8J)

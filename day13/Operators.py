@@ -50,10 +50,11 @@ Enter "help" below or click "Help" above for more information.
 #Multiplication Operation:->
 #It is used to perform multiplication (*)of two or more element
 #we can't directly mulitply to collection value for that we should
+#we can't directly mulitp ly to collection value for that we should
 #Syntax:-> Operand1*n-> n must be integer
 
 
-#Division Operation:->
+#Division Operation:->0
 #It is used to divide given two values(/)
 #There are 3 types of division operation:->
 # 1.True Division(/)
