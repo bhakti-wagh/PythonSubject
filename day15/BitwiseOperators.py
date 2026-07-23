@@ -137,8 +137,8 @@ SyntaxError: invalid syntax
 136
 bin(136)
 '0b10001000'
->>> 
->>> #syntax :-> op1<<n -> n must be integer
+
+#syntax :-> op1<<n -> n must be integer
 >>> #It will shift the osition of binary digits towards left hand side
 >>> 
 >>> 18<<3
@@ -161,4 +161,7 @@ bin(136)
 >>> 
 >>> 79>>2
 19
+>>> 
+>>> 2>>1
+1
 >>> 
