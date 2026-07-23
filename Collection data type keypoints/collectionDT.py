@@ -18,7 +18,7 @@ Enter "help" below or click "Help" above for more information.
 #Allow duplicate values
 #supports indexing and slicing
 #Not hashable(cannot be used as dict keys)
-[
+
 #list [30] methods
     
 
@@ -264,4 +264,6 @@ a
 2524060407552
 >>> id(c)
 2524060407552
->>> 
+>>>
+
+
