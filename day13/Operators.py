@@ -49,7 +49,6 @@ Enter "help" below or click "Help" above for more information.
 
 #Multiplication Operation:->
 #It is used to perform multiplication (*)of two or more element
-#we can't directly mulitply to collection value for that we should
 #we can't directly mulitp ly to collection value for that we should
 #Syntax:-> Operand1*n-> n must be integer
 
