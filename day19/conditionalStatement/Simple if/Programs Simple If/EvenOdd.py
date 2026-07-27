@@ -87,8 +87,7 @@ if h%2==0:
     k.append(h)
     print(k)
 
-s=30
-k=s
 
-type(k)
+
+
 
