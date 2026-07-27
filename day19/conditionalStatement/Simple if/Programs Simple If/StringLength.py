@@ -12,7 +12,7 @@ if len(a)%2!=0:
     
 #wap to check whether the length of word is divisible by 3
 
-b="PythonProgramming "
+b="Python Programming "
 
 if (len(b)//3)*3==len(b):
     print(f"The given word {b} is divisible by 3")
