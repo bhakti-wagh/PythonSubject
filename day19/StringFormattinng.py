@@ -60,28 +60,64 @@ My name is 22 and My age is Bhakti
 a="My name is {1} and My age is {0} and subject is {2}".format(22,"Bhakti","pyhotn")
 print(a)
 My name is Bhakti and My age is 22 and subject is pyhotn
->>> 
->>> 
->>> 
->>> 
->>> 
->>> 
->>> 
->>> #3. Formatting with f-literals({}):->
->>> #
->>> # inside the {} we have to pass variable Name
->>> # Before the quotes we have to mention either F/f -> it is very imp for programming
->>> 
->>> name="joy"
->>> age=35
->>> 
->>> msg= f"My name is {name} and My age is {age}"
->>> print(msg)
+
+
+
+
+
+
+
+#3. Formatting with f-literals({}):->
+#
+# inside the {} we have to pass variable Name
+# Before the quotes we have to mention either F/f -> it is very imp for programming
+
+name="joy"
+age=35
+
+msg= f"My name is {name} and My age is {age}"
+print(msg)
 My name is joy and My age is 35
->>> 
->>> msg= F"My name is {name} and My age is {age}"
->>> print(msg)
+
+msg= F"My name is {name} and My age is {age}"
+print(msg)
 My name is joy and My age is 35
->>> 
->>> msg
+
+msg
 'My name is joy and My age is 35'
+
+
+
+a=eval(input('enter'))
+enterxyz
+Traceback (most recent call last):
+  File "<pyshell#76>", line 1, in <module>
+    a=eval(input('enter'))
+  File "<string>", line 1, in <module>
+    __import__('idlelib.run').run.main(True)
+NameError: name 'xyz' is not defined
+>>> a=eval(input('enter:'))
+enter: xyz
+Traceback (most recent call last):
+  File "<pyshell#77>", line 1, in <module>
+    a=eval(input('enter:'))
+  File "<string>", line 1, in <module>
+    __import__('idlelib.run').run.main(True)
+NameError: name 'xyz' is not defined
+>>> 
+>>> print(a)
+My name is Bhakti and My age is 22 and subject is pyhotn
+>>> a=eval(input('enter'))
+enter: 'xyz'
+Traceback (most recent call last):
+  File "<pyshell#80>", line 1, in <module>
+    a=eval(input('enter'))
+  File "<string>", line 1
+    : 'xyz'
+    ^
+SyntaxError: invalid syntax
+>>> a=eval(input('enter'))
+enter'zyz'
+>>> print(a)
+zyz
+>>> 
