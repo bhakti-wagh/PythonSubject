@@ -54,10 +54,41 @@ if(d1&1)==1:
 #Wap to check given word is even length
 
 a="Python"
+
 if len(a)%2==0:
     print(f"The given word is {a} is even length")
 
 
-#wap 
+#wap to check give number is even and then convert into complex data type
 
+x=100
+
+if x%2==0:
+    print(complex(x))
+    print(float(x))
+
+#Wap to check given number is even and store into list (Without inbuilt function)
+
+x=200
+
+k=list()
+
+if x%2==0:
+    k=k+[x]
+    print(k)
+
+
+#Wap to check given number is even and store into list (with append function)
+
+h=20
+k=[]
+
+if h%2==0:
+    k.append(h)
+    print(k)
+
+s=30
+k=s
+
+type(k)
 
