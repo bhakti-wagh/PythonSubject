@@ -27,3 +27,20 @@ p=121
 
 if (p//100)==(p%10):
     print(f"{p} is palindrome number")
+
+
+
+
+#wap to check the given number is divisible by  2 and 6
+
+num=eval(input("Enter number:"))
+
+if (num%2)==0 and (num%6)==0: #here if 1 condition is true and 2nd condtion false and it will not work 
+    print(f"{num} is divisible by 2 and 6")
+
+#use OR
+
+num1 = eval(input("Enter Number:"))
+
+if num1%2==0 or num1%6==0:
+    print(f"{num1} is divisible by 2 or 6")
