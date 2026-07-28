@@ -2,5 +2,5 @@
 
 x=eval(input("Enter year:"))
 
-if x%4==0:
+if x%400==0:
     print(f"{x} is leap year")
