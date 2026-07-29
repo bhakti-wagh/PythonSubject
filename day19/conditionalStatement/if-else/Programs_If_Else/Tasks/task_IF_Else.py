@@ -293,6 +293,7 @@ else:
 #WAP to check whether a given string of first character is alphabet or not
 #if the alphabet prints, reverse the string or else print the middle character.
 
+'''
 s = input("Enter a string: ")
 
 if ('A' <= s[0] <= 'Z') or ('a' <= s[0] <= 'z'):
@@ -301,4 +302,26 @@ if ('A' <= s[0] <= 'Z') or ('a' <= s[0] <= 'z'):
 else:
     mid = len(s) 
     print("First character is not an alphabet")
-    print("Middle Character:", s[mid])
+'''
+
+
+
+#wap to check whether the male and female are eligible for wedding
+'''
+male=eval(input("Enter male age:"))
+
+female=eval(input("Enter female age:"))
+
+if male>=21 and female>=18:
+    print("Elgible for wedding")
+          '''
+
+#wap to return uppercase if the char is lower,
+#else return same char
+
+s=eval(input("Enter character:"))
+
+if s.lower():
+    print("convert into uppercase",s.upper())
+else:
+    print(s)
