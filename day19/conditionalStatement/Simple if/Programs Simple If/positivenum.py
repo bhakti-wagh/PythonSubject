@@ -532,3 +532,90 @@ if x[0] == x[-1]:
 '''
 
 #. WAP to check if a character is a vowel.
+x=eval(input("enter string:"))
+
+if x in 'A E I O U a e i o u':
+    print("vowel")
+
+#wap to check if a character is uppercase
+
+x=eval(input("enter string:"))
+
+if x.upper():
+    print("uppercase")
+
+#wap to check if a character in lowercase
+
+if x.lower():
+    print("lowercase")
+
+#wap to check if a character is digit
+
+if x.isdigit():
+    print("digit")
+
+#wap to check if ascii value of charavter > 10
+
+s=eval(input("Enter value:"))
+
+if chr(s)>100:
+    print(f"{s} is grater than 100")
+
+#wap check if 5 exist in list
+
+num=eval(input("enter list:"))
+
+if 5 in num:
+    print("present")
+
+#wap check if last element in lists even:
+
+num1=eval(input("Enter list:"))
+
+if num1%10 in num1:
+    print(num1)
+
+#allow withdrawl only if balance is suuficent
+
+bal= eval(input("enter balance:"))
+wit=eval(input("enter withdrawl:"))
+
+if wit<=bal:
+    print("insufficent balance")
+
+#verify the entered otp
+otp=eval("enter otp:")
+
+if otp==otp:
+    print("verify")
+
+
+#allow an a-rated movie only for adults
+
+age=eval(input("enter age:"))
+
+if age>=18:
+    print("allow for a-rated movie")
+
+
+#show message if there is money in the account
+
+bal1=eval(input("enter balance:"))
+
+1`q1if bal1>0:
+    print(f"{bal1} amount")
+
+
+#eligible only if salary is above 30000
+
+sal=eval(input("enter salar:"))
+
+if sal>=30000:
+    print("eligible")
+
+#employees with more than 5 year of experience receive bonus
+
+exp=eval(input("Enter experience:"))
+
+if exp>=5:
+    print("eligible")
