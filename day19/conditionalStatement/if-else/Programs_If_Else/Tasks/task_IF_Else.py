@@ -318,10 +318,13 @@ if male>=21 and female>=18:
 
 #wap to return uppercase if the char is lower,
 #else return same char
-
+'''
 s=eval(input("Enter character:"))
 
 if s.lower():
     print("convert into uppercase",s.upper())
 else:
-    print(s)
+   print(s)
+'''
+
+#wap
