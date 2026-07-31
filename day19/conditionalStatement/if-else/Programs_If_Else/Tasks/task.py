@@ -63,7 +63,7 @@ else:
 #WAP whether a given string, if string length is more than 2, then it displays a new
 #string with the first and last characters switched, otherwise the display the 3
 #copies of given string.
-
+'''
 a="Py"
 
 if len(a)>2:
@@ -72,3 +72,23 @@ if len(a)>2:
 else:
     print(a*3)
  
+'''
+
+#WAP to check whether a given value is a list and first and last values should be
+#integer if condition is satisfied first value is True division by 3 and perform the
+#bitwise not for last value and those result values are stored in same positions in
+#given list or else, to perform length of the collection power by 2 and display
+#value.
+
+#a=[1,'ab',8.9,True,5.1]
+
+a=eval(input("Enter list data:"))
+
+if isinstance(a,list)and isinstance(a[0],int) and isinstance(a[-1],int):
+
+    a[0]=a[0]/3
+    a[-1]=~a[-1] #-(n+1)
+    print(a)
+else:
+    print(len(a)**2)
+    
