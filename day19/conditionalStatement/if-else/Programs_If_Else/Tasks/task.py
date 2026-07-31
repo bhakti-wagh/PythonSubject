@@ -82,6 +82,7 @@ else:
 
 #a=[1,'ab',8.9,True,5.1]
 
+'''
 a=eval(input("Enter list data:"))
 
 if isinstance(a,list)and isinstance(a[0],int) and isinstance(a[-1],int):
@@ -92,3 +93,49 @@ if isinstance(a,list)and isinstance(a[0],int) and isinstance(a[-1],int):
 else:
     print(len(a)**2)
     
+'''
+
+
+#WAP to check whether a given value is a string or not and length of the value
+#should be more than 7, if condition is satisfied to append the new string in the
+#middle of the given string or else to perform the replications with 3 and display
+#the result.
+'''
+a=eval(input("Enter  data:"))
+
+low=0
+hight=len(a)-1
+
+if isinstance(a,str) and len(a)>7:
+    sub_string=eval(input("insert the data:"))
+
+    mid=(low+hight)//2
+    data=a[:mid:]+sub_string+a[mid+1::]
+    print(data)
+else:
+    print(a*3)
+
+'''
+
+'''
+
+d="Morningclass"
+
+low=0
+high=len(d)-1
+
+if isinstance(d,str) and len(d)>7:
+    substr="777"
+
+    mid= (low+high)//2  #len(d)//2
+ 
+    data=d[:mid:]+substr+d[mid+1::]
+
+    print(data)
+else:
+
+    print(d*3)
+
+'''
+
+
