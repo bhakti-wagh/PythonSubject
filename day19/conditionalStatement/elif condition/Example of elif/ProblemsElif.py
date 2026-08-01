@@ -89,7 +89,7 @@ else:
 
 
 #based on the symbol i want to perform operation[
-
+'''
 sym=eval(input("Enter symbol:"))
 
 a=eval(input("Enter number:"))
@@ -109,10 +109,43 @@ elif sym=='/':
     print("division is:",a/b)
 
 elif sym=='//':
-    print(" floor division is:",a//b)
+    print(" floor -division is:",a//b)
 
 elif sym=='%':
     print("remainder is:",a%b)
 
 else:
     print("different data")
+'''
+
+
+#among three vairable largest number
+'''
+x=eval(input("Enter number:"))
+y=eval(input("Enter sec number:"))
+z=eval(input("Enter thr number:"))
+
+if x>y and x>z:
+    print(f"{x} is largest")
+
+elif y>x and y>z:
+    print(f"{y} is largest")
+
+else:
+    print(f"{z} is largest")
+'''
+
+#among  three vairable smallest number
+
+x=eval(input("Enter number:"))
+y=eval(input("Enter sec number:"))
+z=eval(input("Enter thr number:"))
+
+if x<y and x<z:
+    print(f"{x} is smallest")
+
+elif y<x and y<z:
+    print(f"{y} is smallest")
+
+else:
+    print(f"{z} is smallest")
