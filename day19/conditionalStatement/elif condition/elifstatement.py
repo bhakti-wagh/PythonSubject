@@ -14,8 +14,8 @@ Enter "help" below or click "Help" above for more information.
 #            |
 #           elif condition:
 #           <->    Statement
->>> #            |
-... #           elif condition:
+#            |
+#           elif condition:
 ... #           <->    Statement
 ... 
 >>> #           else:
@@ -40,3 +40,5 @@ Enter "help" below or click "Help" above for more information.
 >>> #                           /[TRUE]     \[FAlSE]
 >>> #                               |          |
 ... #                    [block execute ]   [BlankSpace]
+>>> 
+>>> 
