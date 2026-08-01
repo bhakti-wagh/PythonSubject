@@ -56,3 +56,32 @@ elif ord('0')<=ord(x)<=ord('9'):
     print("digit")
 
 '''
+
+
+#based on the number i want to print day name
+
+day=eval(input("Enter number:"))
+
+if day==1:
+    print("Monday")
+
+elif day==2:
+    print("Tuesday")
+
+elif day==3:
+    print("Wensday")
+
+elif day==4:
+    print("Thrusday")
+
+elif day==5:
+    print("Friday")
+
+elif day==6:
+    print("Saturday")
+
+elif day==7:
+    print("Sunday")
+
+else:
+    print("Invalid day")
