@@ -59,7 +59,7 @@ elif ord('0')<=ord(x)<=ord('9'):
 
 
 #based on the number i want to print day name
-
+'''
 day=eval(input("Enter number:"))
 
 if day==1:
@@ -85,3 +85,34 @@ elif day==7:
 
 else:
     print("Invalid day")
+'''
+
+
+#based on the symbol i want to perform operation[
+
+sym=eval(input("Enter symbol:"))
+
+a=eval(input("Enter number:"))
+b=eval(input("Enter number2 :"))
+
+
+if sym=='+':
+    print("sum is :",a+b)
+
+elif sym=='-':
+    print("substraction is:",a-b)
+
+elif sym=='*':
+    print("multiplication is:",a*b)
+
+elif sym=='/':
+    print("division is:",a/b)
+
+elif sym=='//':
+    print(" floor division is:",a//b)
+
+elif sym=='%':
+    print("remainder is:",a%b)
+
+else:
+    print("different data")
