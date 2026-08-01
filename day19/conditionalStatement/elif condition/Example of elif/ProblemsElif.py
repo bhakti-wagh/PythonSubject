@@ -154,7 +154,7 @@ else:
 
 
 #wap to check according to age eligiblity of marriage
-
+'''
 age=eval(input("Enter age:"))
 
 if age<17:
@@ -168,5 +168,104 @@ elif 18<=age<=25:
 
 elif 25<=age<=30:
     print("Arrange M")
+    
 elif 30<=age<=40:
     print("Yourwish")
+'''
+
+
+#wap to check data is sequence/iterable/individual
+
+'''
+a=eval(input("Enter data:"))
+
+if isinstance(a,(str,list,tuple)):
+    print("Its sequence data type")
+
+elif isinstance(a,(str,list,set,tuple,dict)):
+    print("Its Iterable data type")
+
+elif isinstance(a,(int,float,complex,bool)):
+    print("Its Individual data type")
+
+else:
+    print("Invalid data")
+'''
+
+
+#.wap if input is string return its length,else if input is list pop element,else
+# if input is tuple reverse else invalid input
+'''
+a=eval(input("Enter data:"))
+
+if isinstance(a,str):
+    print("length of string:",len(a))
+
+elif isinstance(a,list):
+    a.pop()
+    print(a)
+
+elif isinstance(a,tuple):
+    print(a[::-1])
+
+else:
+    print("Invalid input")
+'''
+
+#wap to check a age belongs to category 0 to 17 child and 18 to 30 ur adult,
+#31 to 60 ur men,
+#61 to 100 senior citizen,else
+ #invalid
+
+'''
+a=eval(input("Enter age:"))
+
+if 0<=a<=17:
+    print("Child")
+
+elif 18<=a<=30:
+    print("You are adult")
+
+elif 31<=a<=60:
+    print("You are men")
+
+elif 61<=a<=100:
+    print("senior citizen")
+
+
+else:
+    print("Invalid")
+'''
+
+
+
+#wap to take marks of 5 sub,calculate the average if the average is b/w 90-100
+#print Distinction
+#if 75-89 print first class and
+#if it's 60-74 print second class, if 50-59 print Third class,below 50 is fail
+#note:-->max marks is 100
+'''
+math=eval(input("Enter math marks:"))
+sci=eval(input("Enter sci marks:"))
+eng=eval(input("Enter eng marks:"))
+hist=eval(input("Enter hist marks:"))
+geo=eval(input("Enter geo marks:"))
+
+avg=(math+sci+eng+hist+geo)/5
+print(avg)
+
+if 90<=avg<=100:
+    print("Distinction")
+
+elif 75<=avg<=89:
+    print("First Class")
+elif 60<=avg<=74:
+    print("Second class")
+
+elif 50<=avg<=59:
+    print("Third class")
+
+else:
+    print("Fail")
+'''
+
