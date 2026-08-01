@@ -136,7 +136,7 @@ else:
 '''
 
 #among  three vairable smallest number
-
+'''
 x=eval(input("Enter number:"))
 y=eval(input("Enter sec number:"))
 z=eval(input("Enter thr number:"))
@@ -149,3 +149,24 @@ elif y<x and y<z:
 
 else:
     print(f"{z} is smallest")
+
+'''
+
+
+#wap to check according to age eligiblity of marriage
+
+age=eval(input("Enter age:"))
+
+if age<17:
+    print("child Marriage")
+
+elif age==18:
+    print("Eligible ")
+
+elif 18<=age<=25:
+    print("Love M")
+
+elif 25<=age<=30:
+    print("Arrange M")
+elif 30<=age<=40:
+    print("Yourwish")
