@@ -269,3 +269,38 @@ else:
     print("Fail")
 '''
 
+
+#consider a character input if it is uppercase convert it into lowercase
+#if it is lower-> upper if it is digit print remiander when it is
+#divided by 3 else if it is spceial character prints its acii value
+'''
+ch=eval(input("Enter character:"))
+
+if 'A' <= ch <= 'Z':
+    print("Lowercase:", ch.lower())
+2
+elif 'a' <= ch <= 'z':
+    print("Uppercase:", ch.upper())
+
+elif '0' <= ch <= '9':
+    print("Remainder:", int(ch) % 3)
+
+
+else:
+    print(ord(ch))
+
+
+'''
+
+
+
+num=eval(input("Enter number:"))
+
+if num%3==0:
+    print("Fizz")
+
+elif num%5==0:
+    print("buzz")
+
+elif num%3==0 and num%5==0:
+    print("Fizzbuzz")
