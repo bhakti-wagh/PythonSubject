@@ -60,7 +60,7 @@ else:
 
 '''
 #Greatest of four number
-
+'''
 num=eval(input("Enter number:"))
 a=eval(input("Enter number:"))
 b=eval(input("Enter number:"))
@@ -88,3 +88,31 @@ else:
             print(f"{b} is greater")
         else:
             print(f"{c} is greater")
+'''
+
+
+ls=eval(input("Enter list data:"))
+
+
+if type(ls)==list:
+
+    print("1--->pop()")
+    print("2--->append()")
+    print("3--->clear()")
+
+    choice=eval(input("Enter choice :"))
+
+    if choice==1:
+        ls.pop()
+        print(ls)
+    elif choice==2:
+        data=eval(input("Enter data to append:"))
+        ls.append(data)
+        print(ls)
+    elif choice==3:
+        ls.clear()
+        print(ls)
+    else:
+        print("Invalid choice")
+else:
+    print("entered data is not list")
