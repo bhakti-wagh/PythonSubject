@@ -175,7 +175,7 @@ mode=eval(input("Enter mode of Payment:"))
 
 if mode in payment:
 
-    print("You choose credit card payment and you get 10% off")
+    print(f"You choose {mode}")
 
     totalproduct=eval(input("Enter Total Proudct:"))
 
@@ -188,9 +188,30 @@ if mode in payment:
 
         if p1>=500 and p2>=500 and p3>=500:
 
-            print(f"You choose credit card and  total product {3} amount will more than 500")
-            
+            print(f"You choose {mode} and  total product {totalproduct} amount  more than 500")
+
+            if mode==payment[0]:
+                print(f"you choose {mode} then you got 10% off")
+
+                disc=10
+
+                total=p1+p2+p3
+                
+                disc_amt=total*disc/100
+                
+                final_price=total-disc_amt
+
+                print(f"You choose {mode} and  total product {totalproduct} amount  more than 500 then you can get {disc} final price is{final_price}")
+            else:
+                print(f"you choose {mode} different mode you not got 10%off")
 
 
+        else:
+            print("product price is not greater than 500")
 
+    else:
+        print("Total product is not 3")
+
+else:
+    print("Invalid payment mode")
 
