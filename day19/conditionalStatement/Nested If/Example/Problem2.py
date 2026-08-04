@@ -159,16 +159,58 @@ else:
 
 #wap to find middle element is even or odd [3,4,6,7,9,1,5]
 
+#li=eval(input("Enter list data:"))
+
+a = [3, 4, 6, 7, 9, 1, 5]
+
+if len(a) > 0:
+
+    mid = len(a) // 2
+    middle = a[mid]
+
+    if middle % 2 == 0:
+        print(f"Middle element {middle} is Even")
+    else:
+        print(f"Middle element {middle} is Odd")
+
+else:
+    print("List is Empty")
 
 #wap to purchase a phone from the shopping app
 #apps=["Flipcart","Amazon"]
 #categories=["Electronics","Mobile","Fashion","furnitures"]
 
+'''
+apps=["Flipcart","Amazon"]
+
+user=eval(input("Enter apps:"))
+
+if user in apps:
+
+    print(f"you choose {user}app")
+
+    categories=["Electronics","Mobile","Fashion","furnitures"]
+
+    user1=eval(input("Enter categories:"))
+
+    if user1 in categories:
+
+        print(f"you choose {user} app and {user1} categories")
+
+        
+
+
+'''
+    
+
+
+
 #wap to give 10% off only who is purchasing in credit card and min 3 product should purchase
 #and product price should be more than 500
 
+'''
 
-payment=["credit card","Phone Pay","Cash on deilivery"]
+payment=["credit card","Phone Pay","Cash on delivery"]
 
 
 mode=eval(input("Enter mode of Payment:"))
@@ -179,31 +221,31 @@ if mode in payment:
 
     totalproduct=eval(input("Enter Total Proudct:"))
 
-    if totalproduct<=3:
-        print("Total Product is 3 ")
-
+    if totalproduct>=3:
         p1=eval(input("Enter p1 amount:"))
         p2=eval(input("Enter p2 amount:"))
         p3=eval(input("Enter p3 amount:"))
 
-        if p1>=500 and p2>=500 and p3>=500:
+        if p1>500 and p2>500 and p3>500:
 
-            print(f"You choose {mode} and  total product {totalproduct} amount  more than 500")
-
+            
             if mode==payment[0]:
-                print(f"you choose {mode} then you got 10% off")
-
-                disc=10
-
-                total=p1+p2+p3
                 
-                disc_amt=total*disc/100
-                
-                final_price=total-disc_amt
+                total = p1 + p2 + p3
+                discount = total * 10 / 100
+                final_amount = total - discount
 
-                print(f"You choose {mode} and  total product {totalproduct} amount  more than 500 then you can get {disc} final price is{final_price}")
+                print("Congratulations! You got 10% Discount.")
+                print("Total Product:",totalproduct)
+                print("Total Amount:", total)
+                print("Discount:", discount)
+                print("Final Amount:", final_amount)
+                
+
+              
             else:
-                print(f"you choose {mode} different mode you not got 10%off")
+                 print("Discount is available only for Credit Card payment.")
+
 
 
         else:
@@ -215,3 +257,4 @@ if mode in payment:
 else:
     print("Invalid payment mode")
 
+'''
