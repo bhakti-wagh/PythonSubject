@@ -160,7 +160,7 @@ else:
 #wap to find middle element is even or odd [3,4,6,7,9,1,5]
 
 #li=eval(input("Enter list data:"))
-
+'''
 a = [3, 4, 6, 7, 9, 1, 5]
 
 if len(a) > 0:
@@ -175,7 +175,7 @@ if len(a) > 0:
 
 else:
     print("List is Empty")
-
+'''
 #wap to purchase a phone from the shopping app
 #apps=["Flipcart","Amazon"]
 #categories=["Electronics","Mobile","Fashion","furnitures"]
@@ -196,6 +196,8 @@ if user in apps:
     if user1 in categories:
 
         print(f"you choose {user} app and {user1} categories")
+
+        
 
         
 
