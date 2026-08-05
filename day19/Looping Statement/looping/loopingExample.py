@@ -75,12 +75,15 @@ for i in d.values():
 
 print()
 
+
 for i in d.items():
     print(i)
 
 
 '''
+'''
 
+#here check in given list even numbers and print 
 
 d=[1,2,3,4,5,6,7,8,9,10]
 
@@ -88,6 +91,76 @@ for i in d:
 
     if i%2==0:
         print("Even number :",i)
+
+'''
+
+
+#convert all list element in uppercase
+
+#s=["abc","xyz","python","java","sql"]
+
+'''
+for i in s:
+
+    print(i.upper())
+'''
+print()
+
+#print 1st character and last character of string
+'''
+
+for i in s:
+
+    print(i,'--->',i[0] ,'---',i[-1])
+
+
+print()
+'''
+
+#check the in given list even length element
+'''
+
+for i in s:
+
+    if len(i)%2==0:
+        print(len(i),'-->',i)
+
+
+'''
+
+#to print in given string print only integer number
+
+'''
+s="Python123"
+
+for i in s:
+
+    if i.isdigit():
+        print('digit no:',i)
+
+
+print()
+'''
+
+
+#in given string print only consonant
+
+s="Good Luck"
+
+for i in s:
+
+    if i not in 'AEIOUaeiou':
+        print(i)
+
+        
+    
+
+
+
+
+
+
+    
 
 
     
