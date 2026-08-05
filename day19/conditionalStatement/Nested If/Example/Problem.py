@@ -1,4 +1,4 @@
-
++
 #wap to check whether the middle value in a list is str or not
 '''
 a=eval(input("Enter the list:"))
