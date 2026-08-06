@@ -111,7 +111,7 @@ print()
 
 for i in s:
 
-    print(i,'--->',i[0] ,'---',i[-1])
+    print(i,'--->',i[0] ,'---',i[-1]) # print(i[0] + i[-1])
 
 
 print()
@@ -161,8 +161,7 @@ for i in s:
 
 
     
-
-
++-
     
 
 

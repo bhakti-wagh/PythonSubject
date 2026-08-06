@@ -80,7 +80,7 @@ s="hello"
 
 
 #count uppercase letters
-
+'''
 s="PyTHon"
 
 total_character=0
@@ -89,3 +89,4 @@ for i in s:
     if i.isupper():
         total_character=total_character+1
 print(total_character)
+'''

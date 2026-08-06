@@ -226,7 +226,7 @@ if mode in payment:
     if totalproduct>=3:
         p1=eval(input("Enter p1 amount:"))
         p2=eval(input("Enter p2 amount:"))
-        p3=eval(input("Enter p3 amount:"))
+        p3=eva`l(inp\7ut("Enter p3 amount:"))
 
         if p1>500 and p2>500 and p3>500:
 
