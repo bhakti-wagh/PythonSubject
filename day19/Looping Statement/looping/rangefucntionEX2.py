@@ -245,7 +245,7 @@ for i in range(len(s)):
 
 '''
 #22.wap to capitalize only the first letter of every word in the given list
-
+'''
 l=["vaidegi","rahul","shivam","kapil","patil"]
 
 for i in range(len(l)):
@@ -253,7 +253,61 @@ for i in range(len(l)):
     if l[i].isalpha():
 
         print(l[i].capitalize(),end=" ")
+'''
 
+#23.wap to extract only individual data types form the list
+'''
+l=["hello",1,23.4,5+6j,"guys",[2,3,4],True,False]
+
+for i in range(len(l)):
+
+    if isinstance(l[i],(int,complex,bool,float)):
+        print(l[i],"----> ",type(l[i]) )
+'''
+
+#24.wap to extract only individual data types from the list and sum all the individual data types
+'''
+l=["hello",1,23.4,5+6j,"guys",[2,3,4],True,False]
+
+sum=0
+
+for i in range(len(l)):
+
+    if isinstance(l[i],(int ,complex,bool,float)):
+
+        sum=sum+l[i]
+
+        print(l[i])
+
+print("Sum of individual D.T:",sum)
+
+'''
+
+#25.wap to print the count of alphabets and numbers and space in the given string
+
+s="india got the independence in the year 1947"
+
+alpha=0
+num=0
+space=0
+
+for i in range(len(s)):
+
+    if s[i].isalpha():
+
+        alpha=alpha+1
+
+    elif s[i].isdigit():
+        num=num+1
+
+    elif s[i].isspace():
+        space=space+1
+
+print("Total alphabets:",alpha)
+print("Total numbers:",num)
+print("Total space:",space)
+
+        
 
 
 
