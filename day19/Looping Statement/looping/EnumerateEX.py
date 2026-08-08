@@ -30,3 +30,53 @@ for i in enumerate(s):
             (3, 'l')
             (4, 'o')
 '''
+
+
+#if you want to print only position and value then take 2 variable
+'''
+ if i useing 2 variable then --> 1varaibale--> positon
+                             --> 2variable-->  value
+ output should be in unpacked
+'''
+
+
+for i,j in enumerate(s):
+    print(i)#here only postion display
+
+'''
+    o/p:    0
+            1
+            2
+            3
+            4
+
+'''
+
+for i,j in enumerate(s):
+    print(i,j)#here display both position and value ,,i-->position, j--> value
+
+'''
+    o/p:   0 H
+           1 e
+           2 l
+           3 l
+           4 o
+'''
+
+#wap to print postion and character both
+
+k=[10,20,30,40,50]
+
+for i in enumerate(k):
+    print(i)
+
+
+'''
+        o/p:
+            (0, 10)
+            (1, 20)
+            (2, 30)
+            (3, 40)
+            (4, 50)
+'''
+
