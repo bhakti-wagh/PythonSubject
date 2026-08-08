@@ -1,4 +1,4 @@
-#Practice Questions
+##practice Questions
 
 #1. Print each character of a string
 '''
@@ -266,7 +266,7 @@ for i in range(len(l)):
 '''
 
 #24.wap to extract only individual data types from the list and sum all the individual data types
-'''
+
 l=["hello",1,23.4,5+6j,"guys",[2,3,4],True,False]
 
 sum=0
@@ -281,10 +281,10 @@ for i in range(len(l)):
 
 print("Sum of individual D.T:",sum)
 
-'''
+
 
 #25.wap to print the count of alphabets and numbers and space in the given string
-
+'''
 s="india got the independence in the year 1947"
 
 alpha=0
@@ -308,7 +308,7 @@ print("Total numbers:",num)
 print("Total space:",space)
 
         
-
+'''
 
 
 
