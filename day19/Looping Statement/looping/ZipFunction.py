@@ -13,3 +13,5 @@ Enter "help" below or click "Help" above for more information.
 >>> 
 >>> #Iteriable length should be equal  .....
 .
+>>> #Syntx:-> looping
+>>> #       for i in zip(iterable1,iterable2....):

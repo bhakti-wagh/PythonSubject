@@ -12,3 +12,14 @@ Enter "help" below or click "Help" above for more information.
 >>> #It match position to position
 >>> 
 >>> #Fillvalue always accept one element if you want to pass one or more then use ()
+>>> 
+>>> 
+>>> #Syntax:->
+>>> 
+>>> #           from itertools import zip_longest
+>>> 
+>>> #       (zip_longest(itrable1,iterable2.....,fillvalue=value))
+>>> 
+>>> #Looping Syntax:
+>>> #
+>>> #           for variable in zip_longest(iterable1,iterable2....,fillvalue=value)
