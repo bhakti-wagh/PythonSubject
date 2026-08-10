@@ -9,3 +9,6 @@ Enter "help" below or click "Help" above for more information.
 >>> 
 >>> #If you don't want then use [fillvalue=value]
 >>> 
+>>> #It match position to position
+>>> 
+>>> #Fillvalue always accept one element if you want to pass one or more then use ()
