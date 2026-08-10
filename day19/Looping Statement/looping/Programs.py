@@ -215,18 +215,60 @@ for i in c:
 #9.wap to create a list with square and cube of each numbers
 
 #o/p-->[(4, 8), (16, 64), (25, 125), (1, 1), (64, 512), (81, 729), (100, 1000)]
-
+'''
 d=[2,4,5,1,8,9,10]
 
+l=[]
 
 for i in d:
 
-    print(i**2,i**3)
+    l.append((i**2,i**3))
+
+print(l)
+'''
 
 
+#10.wap to create a new list of reversing each name from the list
 
+'''
+names=["prince","Rekha","Madhu","Sindhu","denga","manga"]
+
+rev=[]
+
+for i in names:
+
+    if i not in rev:
+
+        rev= rev+ [i[::-1]]
 
     
+
+print(rev)
+
+'''
+
+
+#11.wap to create a new list, of individual and collection data type from list
+'''
+data=[20.12,True,[10,20],"super",{1,2},{"a":10},100,(8,9)]
+
+Id=[]
+cd=[]
+
+for i in data:
+
+    if isinstance(i,(int,float,complex,bool)):
+
+        Id += [i]
+
+    else:
+        cd += [i]
+
+print(Id)
+print(cd)
+
+
+'''
 
     
 
