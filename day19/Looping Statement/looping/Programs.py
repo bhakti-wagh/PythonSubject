@@ -270,6 +270,89 @@ print(cd)
 
 '''
 
+
+#12.wap to create a dictionary characters and its count pair
+'''
+char=["a","M","i","A","M","I","i","H","a","H"]
+
+dic={}
+
+
+
+for i in char:
+
+    if i in dic:
+
+        dic[i]=dic[i]+1
+    else:
+        dic[i]=1
+
+print(dic)
+
+'''
+
+#13.wap to group fruit name and country pair
+'''
+d={"apple":45,"mango":67,"cherry":90,"berry":23}
+
+p={"Kashmir":"India","America":"us","UK":"Toronto","Africa":"Uganda"}
+
+new={}
+
+for i,j in zip(d,p):
+    new[i]=(j,p[j])
+
+print(new)
+
+'''
+
+#14.wap to sum of same index element from l1,l2,l3
+'''
+l1=[10,20,30,40]
+l2=[78,44,11,99]
+l3=[1,2,3,4]
+
+l4=[]
+
+for i,j,k in zip(l1,l2,l3):
+
+    l4=l4+[i+j+k]
+
+print(l4)
+
+
+'''
+
+#15.wap to pair values of both dictionary
+
+'''
+d={"apple":45,"mango":67,"cherry":90,"berry":23}
+p={"Kashmir":"india","America":"us","UK":"Toronto","Africa":"Uganda"}
+
+new={}
+
+for i,j in zip(d,p):
+
+    new[d[i]]=(p[j])
+    
+print(new)
+
+'''
+
+
+##1. WAP to extract only file names
+
+l= ['forloop.txt', 'http://python.py', 'while.pdf', 'functions.pptx',
+    'lambda.png', 'http://map.py', 'python.pdf', 'http://oops.py']
+
+#output:-['forloop', 'python', 'while', 'functions', 'lambda', 'map', 'oops']
+
+
+
+
+
+
+
     
 
 
