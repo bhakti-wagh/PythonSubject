@@ -141,10 +141,11 @@ for i in range(0,len(d)):
         num=num+[d[i]]
         
 
-
 print(num)
 
 '''
+
+
 
 
 
@@ -161,7 +162,7 @@ for i in s:
 
     if s.count(i)>1:
 
-        new_str= new_str+'-'
+        new_str= new_str+'-'  #s=s.replace(i,"-")
 
     else:
         new_str=new_str+i
@@ -316,7 +317,7 @@ l4=[]
 
 for i,j,k in zip(l1,l2,l3):
 
-    l4=l4+[i+j+k]
+    l4=l4+[i+j+k]  #sum(i)
 
 print(l4)
 
@@ -331,7 +332,7 @@ p={"Kashmir":"india","America":"us","UK":"Toronto","Africa":"Uganda"}
 
 new={}
 
-for i,j in zip(d,p):
+for i,j in zip(d,p):  for i in zip(d.values(),p.values())
 
     new[d[i]]=(p[j])
     
@@ -340,15 +341,24 @@ print(new)
 '''
 
 
-##1. WAP to extract only file names
 
-l= ['forloop.txt', 'http://python.py', 'while.pdf', 'functions.pptx',
-    'lambda.png', 'http://map.py', 'python.pdf', 'http://oops.py']
 
+
+#1. WAP to extract only file names
+l= ['forloop.txt', 'python.py', 'while.pdf', 'functions.pptx',
+    'lambda.png', 'map.py', 'python.pdf', 'oops.py']
 #output:-['forloop', 'python', 'while', 'functions', 'lambda', 'map', 'oops']
 
 
+k=[]
 
+for i in l:
+    m=i.split(".")
+
+    k.append(m[0])
+
+
+print(k)
 
 
 
