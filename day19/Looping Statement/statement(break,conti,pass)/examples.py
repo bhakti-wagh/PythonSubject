@@ -9,12 +9,13 @@ for i in d:
 
 '''
 
-s=[1,12,-3,90,-4,-5,900,-12]
+
+
+s="Pyhton class"
 
 for i in s:
+    if i=='n':
+        continue
+    print(i,end=" ")
 
-    if i<0:
-        print(i)
-        break
-    
-    
+        

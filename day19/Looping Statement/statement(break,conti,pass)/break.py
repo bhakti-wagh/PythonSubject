@@ -5,5 +5,5 @@ Enter "help" below or click "Help" above for more information.
 >>> 
 >>> #1.break:-> it is a keyword
 >>> #   - if you want to stop the excution immediately
->>> #   - once condition is satisfied then it will stop the execution
->>> 
+>>> #   - once condition is satisfied then it will stop the execution previous 
+>>> # element will be print
