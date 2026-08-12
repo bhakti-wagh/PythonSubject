@@ -62,20 +62,22 @@ for i in l:
 
 '''
 
-#5.WAP to check whether string is ANAGRAM or not
-
-#anagrams : characters should be same it can different meaning
-#tea, eat
-#silent, listen
-#bored , robed
-#cat, act
-#keep, peek
-#lamp, palm
 
 
 #6.Find the sum of even numbers from 1 to 20
+'''
+sum_E=0
+for i in range(1,21):
 
+    #print(i)
 
+    if i%2==0:
+        
+        sum_E=sum_E+i
+        
+print(sum_E)
+        
+'''
 
 
 #7.Count numbers divisible by 3 from 1 to 50
@@ -103,7 +105,7 @@ print(numbers)
 '''    
 
 #9.Print position of each character
-word = "PYTHON"
+#word = "PYTHON"
 '''
 1 P
 2 Y
@@ -236,4 +238,7 @@ if sorted(a)==sorted(b):
     print("Its anagram")
 else:
     print("Its not anagram")
+
+
+
 
