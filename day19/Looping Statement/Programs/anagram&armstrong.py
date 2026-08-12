@@ -6,3 +6,11 @@ Enter "help" below or click "Help" above for more information.
 >>> 
 >>> #use sorted() method :-> it will arrange according to ascii value then it
 >>> #will easily compariason
+>>> #  ==
+>>> 
+>>> 
+>>> 
+>>> #Armstrong :-> sum of the number to the power
+>>> 
+>>> #EX:->    1 5 3:->   1^3  5^3  3^3 :-> 153
+>>> 

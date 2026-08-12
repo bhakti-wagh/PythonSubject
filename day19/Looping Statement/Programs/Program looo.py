@@ -2,6 +2,16 @@
 #from a string
 string = 'hello good morning how are youu'
 #exp o/p : {hello:5, guys:4, morning:7, how:3, are:3, you:4}
+d={}
+for i in string.split():
+
+    
+
+    
+
+
+
+
 '''
 
 """
@@ -22,8 +32,7 @@ s = 'Hi how are you'
 
 """
 
-"""
-5.WAP to check whether string is ANAGRAM or not
+#5.WAP to check whether string is ANAGRAM or not
 
 #anagrams : characters should be same it can different meaning
 #tea, eat
@@ -73,3 +82,17 @@ s="hello world welcome to python"
 
 #15.replace all vowels with *
 s="hello world welcome to python"
+
+
+
+
+5.WAP to check whether string is ANAGRAM or not
+
+#anagrams : characters should be same it can different meaning
+#tea, eat
+#silent, listen
+#bored , robed
+#cat, act
+#keep, peek
+#lamp, palm
+
