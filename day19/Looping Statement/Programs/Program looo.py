@@ -178,17 +178,20 @@ print(animal)
 
 
 #13.filter only character except digits
-
+'''
 s="Think456 and 123answers it789 guys "
 
-a=""
+result=""
 
 for i in s:
 
-    if i.isdigit() not in a:
-        a=i
-print(a)
+    if not i.isdigit():
+        
+        result=result+i
+        
+print(result)
 
+'''
 
 
 
@@ -224,4 +227,13 @@ print(s)
 #cat, act
 #keep, peek
 #lamp, palm
+
+
+a="tea"
+b="eat"
+
+if sorted(a)==sorted(b):
+    print("Its anagram")
+else:
+    print("Its not anagram")
 
