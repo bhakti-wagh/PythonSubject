@@ -141,7 +141,7 @@ print(odd_count)
 '''
 
 #11.wap to print repeated char and count the same
-
+'''
 s="helloworld"
 rep=''
 
@@ -152,11 +152,8 @@ for i in s:
         print(i,"-->",s.count(i))
         rep=rep+i
         
-       
-  
-   
-
-
+print(rep)
+'''
 
 
 #12.Grouping flowers and animals separately
@@ -168,23 +165,54 @@ animal=[]
 
 for i in items:
 
-    print(i)
+    if i.endswith('flower'):
+        flower.append(i)
+    else:
+        animal.append(i)
 
-    if i.endsw
+        
+print(flower)
+print(animal)
 
-'''    
+  '''
 
 
 #13.filter only character except digits
-#s="Think456 and 123answers it789 guys "
+
+s="Think456 and 123answers it789 guys "
+
+a=""
+
+for i in s:
+
+    if i.isdigit() not in a:
+        a=i
+print(a)
+
+
+
+
 
 #14.replace whitespaces with newline char in the below string
-#s="hello world welcome to python"
+'''
+s="hello world welcome to python"
+for i in s:
+    if i==" ":
+        s=s.replace(i,"\n")
+print(s)
+'''
 
 #15.replace all vowels with *
-#s="hello world welcome to python"
+'''
+s="hello world welcome to python"
 
+for i in s:
 
+    if i in 'AEIOUaeiou':
+        s=s.replace(i,'*')
+print(s)
+
+'''
 
 
 #5.WAP to check whether string is ANAGRAM or not
