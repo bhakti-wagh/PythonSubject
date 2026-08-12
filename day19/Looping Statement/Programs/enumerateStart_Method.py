@@ -9,3 +9,13 @@ a="Good Day"
 
 for i in enumerate(a,start=1):
     print(i)
+
+
+
+'''
+
+for variable in enumerate(iterable,start=number):
+<-> statement
+
+
+'''
