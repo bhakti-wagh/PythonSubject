@@ -169,27 +169,26 @@ print(add)
 
 #wap to fecth the string value from list only if len>3
 
-#l=['abc',45,'zsya','you','cat','apple']
-'''
-l=eval(input("Enter the list:"))
+l=['abc',45,'zsya','you','cat','apple']
+
+#l=eval(input("Enter the list:"))
 
 i=0
-
-a=''
+ 
 
 while i<len(l):
 
-    if len(l)>=3:
-        a=a+l[i]
+    if isinstance(l[i],str) and len(l)>=3:
+        print(l[i])
     i+=1
 
-print(a)
 
-'''
+
+
 
 #wap to do addition of ascii value of the special char in string
-
-l="H@He!!"
+'''
+l="H@Hei!!"
 
 i=0
 add=0
@@ -200,5 +199,5 @@ while i<len(l):
     i+=1
 
 print(add)
-
+'''
         
