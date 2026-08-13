@@ -106,7 +106,7 @@ print(out)
 
 
 #fetch all the lowercase,uppercase,digit , specialcharacter
-
+'''
 s=eval(input("Enter the string:"))
 
 low=''
@@ -124,7 +124,7 @@ while i<len(s):
     elif s[i].isupper():
         upp=upp+s[i]
 
-    elif s[i].isdigit():
+     elif s[i].isdigit():
         digit=digit+s[i]
 
     else:
@@ -135,4 +135,70 @@ print(low)
 print(upp)
 print(digit)
 print(spe)
-    
+'''
+
+'''
+Enter the string:'hE45#%'
+h
+E
+45
+#%
+'''
+
+
+#wap to addition of int numbers in given form list
+
+'''
+a=[10,4j+9,'bhakti','sdkf',45,90,'sb']
+
+add=0
+
+i=0
+while i<len(a):
+
+    if isinstance(a[i],int):
+
+        add=add+a[i]
+
+    i+=1
+
+print(add)
+
+#145
+'''
+
+#wap to fecth the string value from list only if len>3
+
+#l=['abc',45,'zsya','you','cat','apple']
+'''
+l=eval(input("Enter the list:"))
+
+i=0
+
+a=''
+
+while i<len(l):
+
+    if len(l)>=3:
+        a=a+l[i]
+    i+=1
+
+print(a)
+
+'''
+
+#wap to do addition of ascii value of the special char in string
+
+l="H@He!!"
+
+i=0
+add=0
+while i<len(l):
+
+    if not l[i].isalpha():
+        add=add+ord(l[i])
+    i+=1
+
+print(add)
+
+        
