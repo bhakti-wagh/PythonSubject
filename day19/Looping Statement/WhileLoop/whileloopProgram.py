@@ -73,7 +73,7 @@ else:
 
 
 #Armstrong number
-
+'''
 num=eval(input("Enter number:"))
 
 i=0
@@ -96,7 +96,64 @@ if total==num:
 else:
     print(f"{num} is not armstrong number")
 
+'''
+
+'''
+num=eval(input("Enter number:"))
+
+dum=num
+
+num_len=len(str(num))
+
+total=0
+
+while num>0:
+
+    last_d= num%10
+
+    total=total+last_d**num_len
+
+    num//=10
+
+if total==dum:
+
+    print(f"{dum} is armstrong ")
+
+else:
+
+    print(f"{dum} is not armstrong")
+
+'''
 
 
+#disarium number
 
- 
+'''
+num=eval(input("Enter number:"))
+dum=num
+
+total=0
+
+
+num_len=len(str(num))
+
+
+while num>0:
+
+    last_d= num%10
+
+    total=total+last_d**num_len
+
+    
+    num_len = num_len - 1
+
+    num//=10
+
+    
+
+if total==dum:
+    print("disarium number")
+
+else:
+    print("not disarium nuber")
+'''
