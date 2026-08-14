@@ -29,22 +29,24 @@ num=eval(input("Enter number:"))
 
 i=1
 
-a=[]
+total=0
 
 while i<num:
 
     if num%i==0:
-        print(i)
 
-        a.append(i)
+        total=total+i
 
     i+=1
 
-print(sum(a),"perfectnumber")
+if total==num:
+    print(f"{num} is perfect number")
+
+else:
+    print(f"{num} is not perfect number")
 
 
-   '''
-
+'''
 
 #Prime number
 '''
@@ -67,5 +69,34 @@ else:
     print("not a prime number")
 
 '''
+
+
+
+#Armstrong number
+
+num=eval(input("Enter number:"))
+
+i=0
+total=0
+
+b=str(num)
+
+power=len(b)
+
+while i<len(b):
+
+    total=total+int(b[i])**power   
+
+    i+=1
+
+
+if total==num:
+    print(f"{num} is armstrong number")
+
+else:
+    print(f"{num} is not armstrong number")
+
+
+
 
  
