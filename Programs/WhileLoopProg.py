@@ -10,14 +10,26 @@ while i<6:
 '''
 
 #wap to print multiplication table for n
-
+'''
 n=eval("Enter password:")
 
 while n=='123':
 
-    
+'''   
 
 #wap to run infinite loop until user enters the
 #correct password
+
+password='pythonE14'
+
+while True:
+
+    ps_wd=eval(input("Enter password:"))
+
+    if ps_wd==password:
+        print("Password correct")
+
+        break
+    
 
 
