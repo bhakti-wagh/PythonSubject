@@ -11,3 +11,13 @@ Enter "help" below or click "Help" above for more information.
 >>> #"True":-> it is non -default value
 >>> #"False":-> it is default value
 >>> 
+>>> 
+>>> 
+>>> 
+>>> #BoolD.T                 |               bool()
+>>> 
+>>> #IT is individual D.T           - It is inbuilt function
+>>> #It is display result
+>>> #in form of True & False        - It will contain value like true and false
+>>> 
+>>> 
