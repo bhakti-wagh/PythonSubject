@@ -60,7 +60,7 @@ print("Sum of natural numbe:",total)
 
 #wap to find the product of n natrual numbers
 #or factorial of number
-
+'''
 num=eval(input("Enter number:"))
 
 i=1
@@ -72,6 +72,11 @@ while i<=num:
     i+=1
 
 print("Factorial number :",fact)
+
+'''
+
+
+#wap to print all the characters of string
 
 
 
