@@ -58,4 +58,20 @@ print("Sum of natural numbe:",total)
 '''
 
 
+#wap to find the product of n natrual numbers
+#or factorial of number
+
+num=eval(input("Enter number:"))
+
+i=1
+fact=1
+
+while i<=num:
+    fact=fact*i
+
+    i+=1
+
+print("Factorial number :",fact)
+
+
 
