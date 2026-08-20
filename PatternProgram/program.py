@@ -1,6 +1,7 @@
 rows=int(input("Enter rows:"))
 columns=int(input("Enter columns:"))
 
+
 for row in range(rows):
     for col in range(columns):
         if row==col:
@@ -10,3 +11,15 @@ for row in range(rows):
         else:
             print(' ',end=" ")
     print()
+
+
+'''
+Enter rows:4
+Enter columns:4
+#       
+@ #     
+@ @ #   
+@ @ @ #
+
+'''
+
