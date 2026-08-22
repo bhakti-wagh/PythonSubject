@@ -25,7 +25,7 @@ if num%2==121:
 
 #2. wap to check the number is even
 
-num=eval(input("Enter number:"))
+#num=eval(input("Enter number:"))
 
 #1st way
 '''
@@ -40,8 +40,8 @@ if (num&1)==0:
 '''
 
 #3rd way
-
+'''
 if (num//2)*2==num:
     print("Even number")
-
+'''
 
