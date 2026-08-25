@@ -47,8 +47,21 @@
 
 #Parameter is always pointing to argument
 
-
 #what is difference between function declaration and function calling
 
+
+
+#LHS==RHS
+
+
+#types of argument while calling the functions
+#1. Positional argument
+#2.  Keyword aragrungme
+#3 only positional argument
+#4. only keyword argruments
+#5. variable positional arguements(*args)
+#6. vaiabale keyword arguments(**kwargs)
+#7. combination fo only powsitional arguement and only keyword argument
+#8. combination of *argd smf**kwargus
 
 
