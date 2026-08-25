@@ -65,6 +65,9 @@
 #8. combination of *args and **kwargus
 
 
-# Position arguments 
+# Position arguments :-> how much we are passing parameter that much we have to pass argument
+#any one parameter is miss match it will shwo Type Error
 
+
+#Kwyword argumentsL->
 
