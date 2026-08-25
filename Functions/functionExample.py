@@ -48,6 +48,14 @@ def palindrome():
 palindrome()
 
 '''
+
+
+
+
+
+
+
+
 '''
 
 s=[1,2,3,4,5,6,10]
@@ -58,7 +66,7 @@ for i in s:
     if i%2==0:
         print(i)
 '''
-
+'''
 def even_Data(s):
 
     for i in s:
@@ -66,8 +74,32 @@ def even_Data(s):
             print(i,end=" ")
 
 even_Data([1,2,3,4,5,6,10])
+'''
 
 
+'''
+d=["Hi","walmart","xyz","good","onoff"]
+
+for i in d:
+
+    if len(i)%2==0:
+        print(i,end=" ")
+    else:
+        print(i[::-1])
+'''
 
 
-        
+'''
+def even_len(d):
+    for i in d:
+
+        if len(i)%2==0:
+            print(i,end=" ")
+        else:
+            print(i[::-1])
+
+even_len(["Hi","walmart","xyz","good","onoff"])
+    
+'''
+
+
