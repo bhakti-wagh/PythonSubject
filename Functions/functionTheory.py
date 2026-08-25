@@ -56,7 +56,7 @@
 
 #types of argument while calling the functions
 #1. Positional argument
-#2.  Keyword aragrungme
+#2.  Keyword argument
 #3. only positional argument
 #4. only keyword argruments
 #5. variable positional arguements(*args)
@@ -66,7 +66,7 @@
 
 
 # Position arguments :-> how much we are passing parameter that much we have to pass argument
-#any one parameter is miss match it will shwo Type Error (without using == symbol)
+#any one parameter is miss match it will show Type Error (without using == symbol)
 
 
 #Kwyword aruments->
