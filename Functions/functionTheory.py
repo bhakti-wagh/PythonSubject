@@ -62,7 +62,7 @@
 #5. variable positional arguements(*args)
 #6. vaiabale keyword arguments(**kwargs)
 #7. combination fo only powsitional arguement and only keyword argument
-#8. combination of *args and **kwargus
+#8. combination of *args and **kwargs
 
 
 # Position arguments :-> how much we are passing parameter that much we have to pass argument
