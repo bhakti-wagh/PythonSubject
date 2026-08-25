@@ -44,3 +44,10 @@
 
 #:-> meaning of argument:-> it is optional
 #                           It is nothing but variable value
+
+#Parameter is always pointing to argument
+
+
+#what is difference between function declaration and function calling
+
+# 
