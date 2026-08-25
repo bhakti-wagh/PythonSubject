@@ -66,7 +66,14 @@
 
 
 # Position arguments :-> how much we are passing parameter that much we have to pass argument
-#any one parameter is miss match it will shwo Type Error
+#any one parameter is miss match it will shwo Type Error (without using == symbol)
 
 
 #Kwyword aruments->
+
+
+
+
+
+
+
