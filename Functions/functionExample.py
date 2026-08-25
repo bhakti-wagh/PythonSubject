@@ -102,4 +102,84 @@ even_len(["Hi","walmart","xyz","good","onoff"])
     
 '''
 
+'''
+s="Hello"
+
+d={}
+
+for i in s:
+
+    d[i]=ord(i)
+
+print(d)
+
+
+
+def check(s):
+    d={}
+
+    for i in s:
+        d[i]=ord(i)
+        
+    print(d)
+
+check("Hello")
+
+ '''
+
+
+'''
+d=[1,45,78,True,False,999]
+
+
+def check(d):
+
+    for i in d:
+
+        if isinstance(i,bool):  #type(i)==bool
+            print(i)
+
+check([1,45,78,True,False,999])
+'''
+
+
+
+e=[90,True,3.5,9+4j,"abc",[1,2,3],{67,90}]
+
+s_v=[]
+
+c_v=[]
+
+for i in e:
+
+        if isinstance(i,(int,bool,float,complex,bool)):
+            s_v.append(i)
+            
+        else:
+            c_v.append(i)
+print(s_v)
+print(c_v)
+
+print()
+print()
+
+
+def demo(e):
+
+    single=[]
+
+    collection=[]
+
+    for i in e:
+
+        if isinstance(i,(int,bool,float,complex,bool)):
+            single.append(i)
+            
+        else:
+            collection.append(i)
+
+    print(single)
+    print(collection)
+
+demo([90,True,3.5,9+4j,"abc",[1,2,3],{67,90}])
 
