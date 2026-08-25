@@ -3,6 +3,7 @@
 #why we want to use Function:->
 #if you want to avoid code repetation , same code again i want to reuse
 #code in systamatic order
+#repetation
 
 
 
@@ -12,6 +13,33 @@
 
 #Function totaly depends on syntax
 
-#Types of Function:->
-#                       1.Predefined function/inbuilt function
-#                       2. UserDefined Function
+#Types of Function:-
+#                       1.Predefined function/inbuilt function(alerady it define in system)
+#                       2. UserDefined Function(customaize function)
+
+
+
+
+# USERDEFINE FUNCTION:-> SYNTAX :-> 2 
+
+#  1.without using return keyword
+#  2.with using return keyword
+
+
+
+#1. without using return keyword:->
+
+#   Syntax:->
+#               def function_name(parameter):   ------function declaration
+#                       statement
+#                       statement ----------Block of code / set of code
+
+#               function_name(argument)-------function call
+
+
+#:->  def ---- keyword
+#:-> in the place of function_name:-> name of the program (any name)
+#:-> (parameter):-> it is part of optional
+#:-> meaning of parameter:-> means  it is nothing but variable name
+
+#:-> 
