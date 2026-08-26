@@ -71,6 +71,8 @@
 
 
 #Kwyword aruments-> in keyword argument we have to pass varname=value
+#unlimited data we can pass
+
 
 
 # what is difference between only positional argument and only keyword arguments??
@@ -89,6 +91,10 @@ def demo(a,b,/,c):
 demo(10,20,c=30)#10 20 30
 
 '''
+
+
+
+
 
 
 #4. only keyword argument:-> (*)
@@ -114,12 +120,106 @@ demo(10,20,c=30)#10 20 30
 #   - return type will be Tupe
 #  - we have to pass (*args):-> in the place of variable name
 
-#  syntax:->  def fun_name(*args):
-#                   print(args) -> if we print only args output should be in Packed Format
+#  syntax:->  
+#               def  print(args) -> if we print only args output should be in Packed Format
 #                          |
 #                       - if we print *args output should be in unpacked format
 
 #            fun_name()-> if we not pass argument it will show Tuple (empty tuple)
+
+
+#Ex:
+def demo(*args):
+     print(args)
+
+demo()
+demo(1,)
+demo(1,2,3,4,5)
+demo('abc',[1,2,3],True, False)
+
+
+
+
+#6. variable keyword arguement=(**kwargs)
+#- unlimited data
+
+# **kwargs -> property
+# |  |
+# |   we can write any namee
+# mandatory (return type will be dictiorary)
+
+
+
+#syntax:
+#       def demo(**kwards):
+#                 |
+#                if we print oly kwargs output should be in paceked format
+#           #If we print olny *kwargs output should be being dict format only key's
+
+#       def():-> {}
+#       def(a=20)-> {'a':20}  zop yet aa
+#
+
+
+
+#6. combination of *args and ** kwargs
+
+'''
+def data(*args,**kwargs):
+    print(args,kwargs)
+
+
+data()#() {}
+
+'''
+
+
+
+#> Default Parameter:->   it will assign with parameter = value
+
+#   syntax:->   def function_name(v_n=0,v_n=0,v_n=0):
+#                |     statement
+
+#               function_name(arguments)
+
+'''
+def Joy(x=0,y=0,z=0):
+    print(x,y,z)
+
+Joy()#-> 0,0,0
+Joy(1) #-> 1,0,0
+Joy(1,2)#-> 1,2,0
+Joy(1,2,3)#-> 1,2,3
+
+'''
+
+
+
+
+
+#Examples of 8 arguments
+
+
+#1. positional arguments
+'''
+def demo(a,b):
+    print(a,b)
+
+demo()#->TypeError
+demo(1)#->TypeError
+demo(1,2)#->1,2
+
+'''
+
+#2.keyword arguments
+
+
+
+    
+
+
+
+
 
 
 
