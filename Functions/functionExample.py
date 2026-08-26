@@ -144,6 +144,9 @@ check([1,45,78,True,False,999])
 
 
 
+'''
+
+#normal 
 e=[90,True,3.5,9+4j,"abc",[1,2,3],{67,90}]
 
 s_v=[]
@@ -164,6 +167,8 @@ print()
 print()
 
 
+
+#function
 def demo(e):
 
     single=[]
@@ -182,4 +187,7 @@ def demo(e):
     print(collection)
 
 demo([90,True,3.5,9+4j,"abc",[1,2,3],{67,90}])
+'''
+
+
 
