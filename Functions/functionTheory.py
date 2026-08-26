@@ -67,6 +67,7 @@
 
 # Position arguments :-> how much we are passing parameter that much we have to pass argument
 #any one parameter is miss match it will show Type Error (without using == symbol)
+#Only limited data 
 
 
 #Kwyword aruments-> in keyword argument we have to pass varname=value
@@ -103,6 +104,22 @@ demo(10,20,c=30)#10 20 30
 
 '''
 
+
+
+#5.variable positional arguments:->(*args)
+#   - unlimited data 
+#   - *args:-> it is property
+#       in the place or args : we can write any name
+#   - * : mandaotry
+#   - return type will be Tupe
+#  - we have to pass (*args):-> in the place of variable name
+
+#  syntax:->  def fun_name(*args):
+#                   print(args) -> if we print only args output should be in Packed Format
+#                          |
+#                       - if we print *args output should be in unpacked format
+
+#            fun_name()-> if we not pass argument it will show Tuple (empty tuple)
 
 
 
