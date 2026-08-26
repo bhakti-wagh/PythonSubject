@@ -61,7 +61,7 @@
 #4. only keyword argruments
 #5. variable positional arguements(*args)
 #6. vaiabale keyword arguments(**kwargs)
-#7. combination fo only powsitional arguement and only keyword argument
+#7. combination of only positional arguement and only keyword argument
 #8. combination of *args and **kwargs
 
 
@@ -69,7 +69,27 @@
 #any one parameter is miss match it will show Type Error (without using == symbol)
 
 
-#Kwyword aruments->
+#Kwyword aruments-> in keyword argument we have to pass varname=value
+
+
+# what is difference between only positional argument and only keyword arguments??
+#-> in positional argument 
+
+#3. only positional argument:-> (/)
+
+# Before the forward slash(/) we can pass only positional argument but  after the slash we can
+#pass both either(positional or keyword argument)
+
+
+#4. only keyword argument:-> (*)
+
+# Before the (*) we can pass both either (positional or keyword argument) but after the (*)
+# we can pass keyword argument
+
+
+
+
+
 
 
 
