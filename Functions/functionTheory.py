@@ -129,6 +129,7 @@ demo(10,20,c=30)#10 20 30
 
 
 #Ex:
+'''
 def demo(*args):
      print(args)
 
@@ -138,7 +139,7 @@ demo(1,2,3,4,5)
 demo('abc',[1,2,3],True, False)
 
 
-
+'''
 
 #6. variable keyword arguement=(**kwargs)
 #- unlimited data
@@ -196,26 +197,19 @@ Joy(1,2,3)#-> 1,2,3
 
 
 
-
-#Examples of 8 arguments
-
-
-#1. positional arguments
-'''
-def demo(a,b):
-    print(a,b)
-
-demo()#->TypeError
-demo(1)#->TypeError
-demo(1,2)#->1,2
-
-'''
-
-#2.keyword arguments
+#2. with using return keyword:->
+ 
 
 
 
-    
+
+
+
+
+
+
+
+
 
 
 
