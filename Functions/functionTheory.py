@@ -81,15 +81,27 @@
 #pass both either(positional or keyword argument)
 
 
+'''
+def demo(a,b,/,c):
+    print(a,b,c)
+
+demo(10,20,c=30)#10 20 30
+
+'''
+
+
 #4. only keyword argument:-> (*)
 
 # Before the (*) we can pass both either (positional or keyword argument) but after the (*)
 # we can pass keyword argument
 
+'''
+def demo(a,b,*,c):
+    print(a,b,c)
 
+demo(10,20,c=30)#10 20 30
 
-
-
+'''
 
 
 
