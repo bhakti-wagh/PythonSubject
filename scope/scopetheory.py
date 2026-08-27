@@ -39,4 +39,37 @@
 
 
 
+#Examples:
+
+'''
+def spam():
+    a=100
+    a+=50
+    return a
+
+x=spam()
+print(x)
+
+
+def spam1():
+    b="python"
+    print(b)
+
+spam1()
+
+
+
+'''
+
+
+# > Global variable:
+
+# 1.Any variable is present outside the fucntion then we can call it as a global variable.
+# 2.Golbal variable we can access any where into the function means we can access inside the
+#    function or outside the function it will work
+
+
+
+
+
 
