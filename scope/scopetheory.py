@@ -12,8 +12,31 @@
 
 # > Local Variable :
 
-# 1. Any variable present inside the function then we can it as a local variable
+# 1. Any variable present inside the function then we can call it as a local variable
 # 2. Local variable we can't access outside directly if we access it will show --NameError--
 
 # 3. How to Access local variable outside  By the help of return  Keyword
+
+
+# Example:-->
+
+ #   def spam():
+ #      name="python"---> local variable
+ #      print(name) --> correct
+ #  spam()----o/p "python"
+
+ #  print(name) ---> NameError
+
+
+
+# Example:-->
+
+#       def spam():
+#           name="Python"
+#           return name
+#       new_variable=spam()
+#       print(new_variable)----->o/p "Python"
+
+
+
 
