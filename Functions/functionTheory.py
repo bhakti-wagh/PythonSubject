@@ -198,6 +198,37 @@ Joy(1,2,3)#-> 1,2,3
 
 
 #2. with using return keyword:->
+
+ #Syntax:->     def fun_name(parameter):  -----function declaration
+#                       statement
+#                       statement  -- block of code
+#                       return
+#               NewVariableName=fun_name(argument)---function calling
+#               print(NewVariableName)
+
+#                       OR
+#              print(fun_name(arguments))
+
+
+# Return:-> it is a keyword
+# why Return:->  - inside function data to print outside we can take the help of
+#                   return keyword
+#           - inside function data we can't access directly outside if we access
+#           it will show -> NameError
+#          - we can't use multiple return keyword if we use also it's work only
+#           for first one not a latest one
+
+# why we can't right multiple time return keyword:
+#           once's return keyword operation completed it will stop the execution it will
+#           won't check the next part
+
+
+# not :-> how to use multiple operation in return keyword:
+#       syntax:-> return data1, data2,....
+
+
+
+
  
 
 
