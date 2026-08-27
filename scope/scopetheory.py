@@ -68,8 +68,12 @@ spam1()
 # 2.Golbal variable we can access any where into the function means we can access inside the
 #    function or outside the function it will work
 
+# 3. global variable we can do modification outside without using any keyword
+#   but if we done any modification inside the function without keyword it will show
+#   unboundedLocal error
 
+# How to do modification for global variable inside----?
 
+# 1. By using global keyword:->  global :-> it is keyword that use do modification
 
-
-
+# Example:->
