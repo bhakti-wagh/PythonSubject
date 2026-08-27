@@ -112,3 +112,55 @@ Modification for global variable (outside)
 # > NonLocal Variable
 
 #any varaible present between two function that type of variable call as a NonLocal variable 
+#always present inside the nested function
+#neither local nor global
+
+
+#we can only perform into nested function
+
+
+x=10
+
+def outer():
+    global x  #-->100
+    y=20
+
+    x+=90
+
+    print(x) # --> 10
+   # print(y) # --> 20
+
+    def inner():
+        nonlocal y   #---> if we can use global variable--> NameError
+        z=30
+
+        print("Modification for nonlocal variable")
+        y=y+180
+        print(y) #200
+        #print(x)#--> 10
+        #print(y)#--->20
+        #print(z)#-->10
+
+    inner()
+
+    #print(x) #-->10
+    #print(y)#---> 20
+   # print(z)
+
+
+
+outer()
+#print(x) #--->10
+#print(y) #NameError
+#print(z)  #NameError
+
+
+
+# global variable we use for outer function and inner function alslo
+
+#but outerfunction varaible if we want to do any modification we can do :
+# 1. without using keyword
+# 2. or we can modifie into inner function using nonlocal keyword
+
+
+
