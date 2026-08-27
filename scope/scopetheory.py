@@ -77,3 +77,38 @@ spam1()
 # 1. By using global keyword:->  global :-> it is keyword that use do modification
 
 # Example:->
+'''
+a=100 #Global variable
+
+def display():
+    global a
+    b=10 #local variable
+    print(f"the given variable is local variable {b}")
+
+    a=a+400
+    print(f"The local variabel is global varaible {a}")
+
+display()
+
+print("Modification for global variable (outside)")
+
+a=a+100
+
+print(a)
+
+
+o/p
+
+the given variable is local variable 10
+The local variabel is global varaible 500
+Modification for global variable (outside)
+600
+'''
+
+
+
+
+
+# > NonLocal Variable
+
+#any varaible present between two function that type of variable call as a NonLocal variable 
