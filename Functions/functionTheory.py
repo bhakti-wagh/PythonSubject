@@ -158,7 +158,7 @@ demo('abc',[1,2,3],True, False)
 #           #If we print olny *kwargs output should be being dict format only key's
 
 #       def():-> {}
-#       def(a=20)-> {'a':20}  zop yet aa
+#       def(a=20)-> {'a':20}  
 #
 
 
