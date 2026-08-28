@@ -318,6 +318,26 @@ print(palindrome())
 keywords arguments
 
 '''
+'''
+def length_data(**kargs):
+    length=0
+    for i in kargs:
+        print(i)
+        length+=1
+    print(length)
+
+length_data(a=10,b=20,c=30,d=[1,2,3,4])
+'''
+'''
+o/p:
+a
+b
+c
+d
+4
+'''
+
+
 
 '''
 23.wap to return length of the variable
@@ -325,14 +345,25 @@ positional arguments
 
 '''
 
+'''
 def length_data(*args):
     length=0
     for i in args:
         print(i)
         length+=1
-    print(legnth)
+    print(length)
 
 length_data(10,20,30,[1,2,3,4])
+'''
+'''
+o/p:
+10
+20
+30
+[1, 2, 3, 4]
+4
+'''
+
 
 
 '''
@@ -341,12 +372,27 @@ string and return corresponding index
   string="coding part is done"
 '''
 
+
+
 '''
 25.wap to squaring of the element in the
 given list
 l=[1,2,3,4,5]
 '''
 
+def sqa(l):
+
+    for i in l:
+        print(i**2)
+
+sqa([1,2,3,4,5])
+
+#o/p:  1
+#      4
+#      9
+#      16
+#      25
+    
 '''
 26.wap to fetch last digit number
 '''
