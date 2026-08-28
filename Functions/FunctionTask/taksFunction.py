@@ -423,7 +423,7 @@ print(fetch())
 two numbers should be added and the result of
 addition should be subtracted by third number
 '''
-
+'''
 def operation():
     a=eval(input("Enter number 1:"))
     b=eval(input("Enter number 2:"))
@@ -440,6 +440,8 @@ def operation():
 
 print(operation())
 
+'''
+
 
 '''
 28.wap to find square,cube,square root and
@@ -447,8 +449,25 @@ cube
 root of a number
 
 
-square root=0.5
-cube 
+square root=0.5 or 1/2
+cube root = 1/3
 '''
+
+def  operation(num):
+    return num**2,num**3,num**(1/2),num**(1/3)
+
+print(operation(16))
+
+
+#OR
+
+import math
+
+def operation2(num1):
+    return num1**2,num1**3,math.sqrt(num1),math.cbrt(num1)
+
+print(operation2(16))
+
+
 
     
