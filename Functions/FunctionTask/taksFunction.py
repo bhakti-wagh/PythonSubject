@@ -453,6 +453,7 @@ square root=0.5 or 1/2
 cube root = 1/3
 '''
 
+'''
 def  operation(num):
     return num**2,num**3,num**(1/2),num**(1/3)
 
@@ -468,6 +469,100 @@ def operation2(num1):
 
 print(operation2(16))
 
+'''
 
 
-    
+'''
+29.wap to check the given characters is
+alphabets or digit or special characters
+
+'''
+'''
+def check():
+    chara=eval(input("Enter characters:"))
+
+    if chara.isalpha():
+        print("alphabet")
+    elif chara.isdigit():
+        print("digit")
+    else:
+        print("special character")
+
+check()
+
+#OR
+
+def check2():
+    char=eval(input("Enter character:"))
+
+    if 'A'<=char<='Z' or 'a'<=char<='z':
+        print("Alphabet")
+    elif '0'<=char<='9':
+        print("Digit")
+    else:
+        print("special character")
+
+check2
+'''
+
+'''
+30.wap to check given iterable is a sequence,
+if it is a sequence reverse it,if not add
+one extra element to the iterable
+'''
+'''
+def iterable(num):
+
+    if isinstance(num,(list,tuple,str)):
+        print(num[::-1])
+    else:
+        print("Its not sequence")
+        iterable.add(10)
+        print(iterable)
+        
+iterable([3,7,9,5,{4,1,2},"dslfj"])
+'''
+
+'''
+31.write a function to print the below output
+func("TRACXN",1)
+#should print RCN
+'''
+
+'''
+def demo(value): #n for index part
+
+    for i in range(1,len(value),2):
+        print(value[i],end=" ")
+
+demo("TRACXN")
+
+''' # RCN
+
+'''
+32.write a function to print the below output
+func("TRACXN",0)
+#should print TAX
+'''
+'''
+def demo(value,n): #n for index part
+
+    for i in range(n,len(value),2):
+        print(value[i],end=" ")
+
+demo("TRACXN",0)
+''' #TAX
+
+
+'''
+33.A function take variable number of positional arguments
+as input. how to check if the arguments
+are more than 5.
+'''
+
+def check(*args):
+
+    if len(args)>5:
+        print("Greater than 5")
+check([1,2,3,4,5,6])
+        
