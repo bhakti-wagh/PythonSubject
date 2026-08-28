@@ -560,9 +560,49 @@ as input. how to check if the arguments
 are more than 5.
 '''
 
+'''
 def check(*args):
 
-    if len(args)>5:
-        print("Greater than 5")
-check([1,2,3,4,5,6])
+    if len(args)> 5:
+        print("length is Greater than 5")
         
+check(1,2,3,4,5,6)
+'''
+
+
+'''
+34.wat to return a dictionary with characters
+and ascii value pair
+
+'''
+
+'''
+def operation(char):
+    d={}
+    d.update({char:ord(char)})
+    return d
+print(operation('A'))
+
+#o/p: {'A':65}
+
+'''
+
+
+'''
+35.waf to reverse a iterable if you are
+passing string or list or tuple else print
+type of the data
+
+'''
+def iter(num):
+    if isinstance(num,(list,str,tuple)):
+        print(num[::-1])
+    else:
+        print(type(num))
+
+iter({4,7,8})
+iter(["abc",34,'ah'])
+
+    
+
+
