@@ -159,13 +159,164 @@ SI = (P × R × T) / 100
 
 '''
 
+'''
 def interest(p,r,t):
     return((p*r*t)/100)
 
 print(interest(10,5,2))
 
+'''
 
 
+'''
+14. Find Average of Three Numbers
+Write a function that accepts three numbers and returns their average.
 
+'''
+'''
+def avg(a,b,c):
+    return (a+b+c)/3
+
+print(avg(10,20,30)) #20.0
+'''
     
+'''
+15.Count Vowels
+Write a function that accepts a string and returns the number of vowels.
+Input: "education"
+Output: 5
+'''
+
+'''
+def vowel(s):
+    count=0
+    for i in s:
+        if i in 'AEIOUaeiou':
+            count+=1
+    print(count)
+
+vowel("education")
+
+#o/p:5
+'''
+
+'''
+
+16.Count Consonants
+Write a function that accepts a string and returns the number of consonants.
+
+'''
+'''
+def cons(s):
+    count=0
+    for i in s:
+        if i not in 'AEIOUaeiou':
+            count+=1
+            print(i)
+            
+    print(count)
+
+cons("education")
+
+#o/p:4
+
+'''
+
+'''
+17. Count Digits in a String
+Write a function that accepts a string and counts how many digits are present.
+Input: "abc123xy5"
+Output: 4
+
+'''
+'''
+def check(d):
+    count=0
+
+    for i in d:
+        if not i.isalpha():
+            count+=1
+
+    print(count)
+
+check("abc123xy5") #4
+ '''           
+
+#If i want to sum of digit then
+#count=count+int(i)
+
+'''
+18.. Reverse a String
+Write a function that accepts a string and returns the reversed string.
+Input: "python"
+Output: "nohtyp"
+'''
+'''
+def rev(s):
+
+    print(s[::-1])
+
+rev("python")
+
+'''
+'''
+19.Return Only Positive Numbers
+Write a function that accepts a list and returns a new list containing only positive numbers.
+a = [10, -5, 20, -2, 30]
+'''
+'''
+def check():
+    a = [10, -5, 20, -2, 30]
+    p=[]
+
+    for i in a:
+        if i>0:
+            p.append(i)
+    return p
+
+print(check())
+  '''  
+
+
+'''
+20.wap to perform addition and subtraction
+if "a" is greater than "b" return sum else
+return difference
+'''
+
+def addsub(a,b):
+    
+
+    if a>b:
+        
+        return a+b
+    else:
+        return a-b
+
+print(addsub(20,10))
+    
+        
+    
+
+'''
+21.waf to check string is palindrome or not
+(take user input)
+'''
+
+'''
+22.wap to return length of variable
+keywords arguments
+
+'''
+
+'''
+23.wap to return length of the variable
+positional arguments
+
+'''
+
+
+'''
+
+'''
     
