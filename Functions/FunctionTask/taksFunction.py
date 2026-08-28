@@ -594,6 +594,8 @@ passing string or list or tuple else print
 type of the data
 
 '''
+
+
 def iter(num):
     if isinstance(num,(list,str,tuple)):
         print(num[::-1])
