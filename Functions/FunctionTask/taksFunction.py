@@ -616,6 +616,7 @@ iter(["abc",34,'ah'])
 alphabet or digit or special character
 (without using inbuilt function).
 '''
+'''
 def check2():
     char=eval(input("Enter character:"))
 
@@ -629,6 +630,46 @@ def check2():
 check2()
 check2()
 check2()
+
+#o/p:  Enter character:'x'
+#        Alphabet
+#      Enter character:'8'
+#        Digit
+#      Enter character:'*'
+#        special character
+'''
+
+'''
+37.wap to return length of an iterable
+without using len() function
+
+'''
+'''
+def iter(value):
+
+    length=0
+
+    for i in value:
+        length=length+1
+
+    return length
+
+print(iter([1,2,3,4,5]))
+'''
+
+'''
+38.wap to count the number of arguments
+passed inside the function call(both
+positional and keyword)
+
+'''
+
+def check(a,b,c,/,d,e,*,f,e):
+
+    count=0
+    
+
+
 
 
 
