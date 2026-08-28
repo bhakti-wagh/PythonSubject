@@ -283,7 +283,7 @@ print(check())
 if "a" is greater than "b" return sum else
 return difference
 '''
-
+'''
 def addsub(a,b):   
 
     if a>b:
@@ -292,24 +292,26 @@ def addsub(a,b):
     else:
         return a-b
 
-print(addsub(20,10))
+print(addsub(20,10)) #30
+print(addsub(100,500)) #-400
     
-        
+'''        
     
 
 '''
 21.waf to check string is palindrome or not
 (take user input)
 '''
-
-def check():
+'''
+def palindrome():
     val=eval(input("Enter string:"))
 
     if val==val[::-1]:
-        return True
+        return True,a
     else:
-        return False
-print(check())
+        return False,a
+print(palindrome()) 
+'''
 
 '''
 22.wap to return length of variable
@@ -323,8 +325,43 @@ positional arguments
 
 '''
 
+def length_data(*args):
+    length=0
+    for i in args:
+        print(i)
+        length+=1
+    print(legnth)
 
+length_data(10,20,30,[1,2,3,4])
+
+
+'''
+24.waf to search for character in a given
+string and return corresponding index
+  string="coding part is done"
 '''
 
 '''
+25.wap to squaring of the element in the
+given list
+l=[1,2,3,4,5]
+'''
+
+'''
+26.wap to fetch last digit number
+'''
+
+'''
+27.wap to read 3 numbers from the user,first
+two numbers should be added and the result of
+addition should be subtracted by third number
+'''
+
+'''
+28.wap to find square,cube,square root and cube
+root of a number
+
+
+'''
+
     
