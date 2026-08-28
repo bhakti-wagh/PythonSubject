@@ -284,8 +284,7 @@ if "a" is greater than "b" return sum else
 return difference
 '''
 
-def addsub(a,b):
-    
+def addsub(a,b):   
 
     if a>b:
         
@@ -302,6 +301,15 @@ print(addsub(20,10))
 21.waf to check string is palindrome or not
 (take user input)
 '''
+
+def check():
+    val=eval(input("Enter string:"))
+
+    if val==val[::-1]:
+        return True
+    else:
+        return False
+print(check())
 
 '''
 22.wap to return length of variable
