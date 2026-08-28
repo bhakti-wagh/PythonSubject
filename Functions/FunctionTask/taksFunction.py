@@ -502,7 +502,7 @@ def check2():
     else:
         print("special character")
 
-check2
+check2()
 '''
 
 '''
@@ -595,7 +595,7 @@ type of the data
 
 '''
 
-
+'''
 def iter(num):
     if isinstance(num,(list,str,tuple)):
         print(num[::-1])
@@ -605,6 +605,32 @@ def iter(num):
 iter({4,7,8})
 iter(["abc",34,'ah'])
 
-    
+#o/p: <class 'set'>
+# ['ah', 34, 'abc']
+
+'''
+
+
+'''
+36.wap to check if a given character is
+alphabet or digit or special character
+(without using inbuilt function).
+'''
+def check2():
+    char=eval(input("Enter character:"))
+
+    if 'A'<=char<='Z' or 'a'<=char<='z':
+        print("Alphabet")
+    elif '0'<=char<='9':
+        print("Digit")
+    else:
+        print("special character")
+
+check2()
+check2()
+check2()
+
+
+
 
 
