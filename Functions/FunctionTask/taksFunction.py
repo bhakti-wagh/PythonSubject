@@ -664,9 +664,14 @@ positional and keyword)
 
 '''
 
-def check(a,b,c,/,d,e,*,f,e):
+def check(*args,**kwargs):
+    posticount=len(args)
+    keyword=len(kwargs)
 
-    count=0
+    print("Positional argument:",posticount)
+    print("Keyword argument:",keyword)
+
+check(10,20,c=60,d=90,e=80)
     
 
 
