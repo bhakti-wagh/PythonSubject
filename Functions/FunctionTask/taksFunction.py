@@ -367,11 +367,24 @@ o/p:
 
 
 '''
-24.waf to search for character in a given
+24.wat to search for character in a given
 string and return corresponding index
   string="coding part is done"
 '''
 
+'''
+def search(s):
+    st=eval(input("Enter a string:"))
+
+    for i in range(len(s)):
+
+        if s[i]==st:
+            print(i,st)
+    return "substring is not found"
+
+search("coding part is done")
+
+'''     
 
 
 '''
@@ -379,14 +392,14 @@ string and return corresponding index
 given list
 l=[1,2,3,4,5]
 '''
-
+'''
 def sqa(l):
 
     for i in l:
         print(i**2)
 
 sqa([1,2,3,4,5])
-
+'''
 #o/p:  1
 #      4
 #      9
@@ -396,6 +409,14 @@ sqa([1,2,3,4,5])
 '''
 26.wap to fetch last digit number
 '''
+'''
+def fetch():
+    num=eval(input("Enter number:"))
+
+    return num%10
+
+print(fetch())
+'''
 
 '''
 27.wap to read 3 numbers from the user,first
@@ -403,11 +424,31 @@ two numbers should be added and the result of
 addition should be subtracted by third number
 '''
 
+def operation():
+    a=eval(input("Enter number 1:"))
+    b=eval(input("Enter number 2:"))
+    c=eval(input("Enter number 3:"))
+
+    sum= a+b
+
+    print("Addition is:",sum)
+
+
+    result = sum-c
+
+    return "Result is:",result
+
+print(operation())
+
+
 '''
-28.wap to find square,cube,square root and cube
+28.wap to find square,cube,square root and
+cube
 root of a number
 
 
+square root=0.5
+cube 
 '''
 
     
