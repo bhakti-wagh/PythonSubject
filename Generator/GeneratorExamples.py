@@ -147,3 +147,92 @@ for i in new:
 
 
 
+
+'''
+3.wap to return a iterator which is having
+square root of values present in the list
+
+l=[25,36,49,81,9,16]
+'''
+
+'''
+#using print() in function
+
+import math
+def sqrt(l):
+
+    for i in l:
+        print(math.sqrt(i))
+
+sqrt([25,36,49,81,9,16])
+
+#using return in function
+
+def sqrt(l):
+    x=[]
+    for i in l:
+       x.append(math.sqrt(i))
+    return x
+
+new=sqrt([25,36,49,81,9,16])
+
+print(new) #[5.0, 6.0, 7.0, 9.0, 3.0, 4.0]
+ '''
+
+'''
+#using yield in generator By Typecasting
+import math
+def sqrt(l):
+
+    for i in l:
+        yield  math.sqrt(i)
+
+new=sqrt([25,36,49,81,9,16])
+
+print(list(new))#[5.0, 6.0, 7.0, 9.0, 3.0, 4.0]
+
+
+#using yield in generator By Looping
+
+def sqrt(l):
+
+    x=[]
+    for i in l:
+        yield math.sqrt(i)
+
+new=sqrt([25,36,49,81,9,16])
+
+for i in new:
+    print(i) #5.0, 6.0, 7.0, 9.0, 3.0, 4.0
+'''
+'''
+#using yield in generator print one by one
+import math
+def sqrt(l):
+
+    for i in l:
+        yield math.sqrt(i)
+
+new=sqrt([25,36,49,81,9,16])
+
+print(next(new))#5.0
+print(next(new)) #6.0
+print(next(new)) #7.0
+print(next(new)) #9.0
+print(next(new)) #3.0
+print(next(new)) #4.0
+
+
+'''
+
+
+
+
+    
+
+
+
+
+
+
+
