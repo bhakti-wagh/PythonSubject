@@ -75,4 +75,75 @@ print(list(oper)) #o/p:[15, -5, 50, 0.5]
 '''
 
 
+'''
+2.wap to generate only values which are
+divisible by 5
+
+l=[34,55,60,56,78,90,25,40]
+
+'''
+'''
+#using return in function
+
+def check(l):
+    m=[]
+    for i in l:
+        if i%5==0:
+            m.append(i)
+    return m
+
+new=check([34,55,60,56,78,90,25,40])
+print(new) #o/p: [55, 60, 90, 25, 40]
+    
+
+#using print() in function
+
+def check(l):
+    for i in l:
+        if i%5==0:
+            print(i)
+
+check([34,55,60,56,78,90,25,40]) #o/p55 60 90 25 40
+
+
+#using generator using yield
+
+def check(l):
+    for i  in l:
+        if i%5==0:
+            yield i
+new=check([34,55,60,56,78,90,25,40])
+print(next(new))
+print(next(new))
+print(next(new))
+print(next(new))
+print(next(new))#o/p: 55 60 90 25 40
+
+#Typecasting in generator:
+
+def check(l):
+    for i in l:
+        if i%5==0:
+             yield i
+
+new=check([34,55,60,56,78,90,25,40])
+print(list(new))#[55, 60, 90, 25, 40]
+
+
+#Looping in generator
+
+def check(l):
+    for i in l:
+        if i%5==0:
+             yield i
+
+new=check([34,55,60,56,78,90,25,40])
+
+for i in new:
+    print(i)#55 60 90 25 40
+    
+'''
+
+
+
 
