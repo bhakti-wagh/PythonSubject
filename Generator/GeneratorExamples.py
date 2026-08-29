@@ -227,6 +227,15 @@ print(next(new)) #4.0
 
 
 
+'''
+wap to return a iterator having tuples of
+word and its len pair and typecast into dictionary
+
+l=["instagram","facebook","whatsapp","meta",
+"oracle"]
+
+'''
+
 
     
 
