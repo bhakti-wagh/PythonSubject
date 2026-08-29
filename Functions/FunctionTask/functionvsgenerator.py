@@ -100,8 +100,35 @@ print(next(d)) #(30, -10, 200)
 '''
 
 
+x=[1,2,3,4,5,6]
+
+#i want to make all number square and add into list
+
+def square(x):
+    
+
+    for i in x:
+        print(i**2)
+
+        
+square([1,2,3,4,5,6])#All o/p get at time
 
 
+def square(x):
+
+    for i in x:
+        yield i**2
+
+y=square([1,2,3,4,5,6])
+
+print(next(y)) #1
+print(next(y))  #4
+print(next(y))  #9
+print(next(y))  #16
+
+y.close()
+
+print(next(y))#StopIteration
 
 
 
