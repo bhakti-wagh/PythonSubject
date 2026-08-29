@@ -673,9 +673,8 @@ def check(*args,**kwargs):
 
 check(10,20,c=60,d=90,e=80)
     
-
-
-
+#o/p: Positional argument: 2
+#     Keyword argument: 3
 
 
 
