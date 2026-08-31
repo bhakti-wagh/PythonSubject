@@ -237,6 +237,85 @@ l=["instagram","facebook","whatsapp","meta",
 '''
 
 
+'''
+wap to generate only numeric values in given
+list
+
+l=["flipkart","Amazon",78,[2,3,4],78,9.87,(5,3),45.36]
+
+'''
+'''
+#using print() in function
+def numeric(l):
+    p=[]
+
+    for i in l:
+        if isinstance(i,(int,float)):
+            p.append(i)
+
+    print(p)
+
+numeric(["flipkart","Amazon",78,[2,3,4],78,9.87,(5,3),45.36])
+
+
+#using return in function
+def numeric(l):
+    p=[]
+
+    for i in l:
+        if isinstance(i,(int,float)):
+            p.append(i)
+
+    return p
+
+numeric(["flipkart","Amazon",78,[2,3,4],78,9.87,(5,3),45.36])
+
+
+#using yield in generator
+def numeric(l):
+    p=[]
+
+    for i in l:
+        if isinstance(i,(int,float)):
+            p.append(i)
+    yield p
+
+   
+
+numeric(["flipkart","Amazon",78,[2,3,4],78,9.87,(5,3),45.36])
+
+
+'''
+
+'''
+wap to generate a list if it is individual
+data type reverse it else return as it is
+
+l=["flipkart","Amazon",78,[2,3,4],78,9.87,(5,3),45.36]
+
+'''
+
+def oper(l):
+
+    p=[]
+
+    for i in l:
+        if isinstance(i,(int,float,complex,bool)):
+            p.append(i)
+    return p
+
+
+oper(["flipkart","Amazon",78,[2,3,4],78,9.87,(5,3),45.36])
+    
+            
+
+
+
+
+
+            
+
+
     
 
 
