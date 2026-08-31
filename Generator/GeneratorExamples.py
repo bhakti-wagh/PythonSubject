@@ -294,7 +294,7 @@ data type reverse it else return as it is
 l=["flipkart","Amazon",78,[2,3,4],78,9.87,(5,3),45.36]
 
 '''
-
+'''
 def oper(l):
 
     
@@ -309,7 +309,15 @@ oper(["flipkart","Amazon",78,[2,3,4],78,9.87,(5,3),45.36])
     
 
 
+'''
 
+
+def wish():
+    print("Good")
+
+wish #blank
+print(wish)#object add
+print(wish())
 
 
             
