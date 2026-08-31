@@ -1,4 +1,5 @@
-
+'''
+#1st example:
 class Job:
 
     empName="John"
@@ -32,6 +33,12 @@ Job.empName="Alice"
 print(Job.empName) #Alice
 print(j.empName) #Alice
 print(j1.empName)#Alice
+
+'''
+
+
+
+
 
 
 
