@@ -297,17 +297,16 @@ l=["flipkart","Amazon",78,[2,3,4],78,9.87,(5,3),45.36]
 
 def oper(l):
 
-    p=[]
+    
 
     for i in l:
         if isinstance(i,(int,float,complex,bool)):
-            p.append(i)
-    return p
+           print(i[::-1])
+    
 
 
 oper(["flipkart","Amazon",78,[2,3,4],78,9.87,(5,3),45.36])
     
-            
 
 
 
