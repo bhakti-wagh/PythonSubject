@@ -86,6 +86,7 @@ f.type()
 
 '''
 
+'''
 
 class Employee:
     sal=7000
@@ -128,4 +129,25 @@ Employee.sal=8000
 e.sal=5000 #salary is 5000
 
 e.data() #salary is 8000
+'''
+
+
+
+class Flower:
+
+    def type(self):
+        self.name="Rose"
+        self.colour="red"
+        Flower.data(f)
+        #self.data()
+
+    def data(self):
+        print(f"flower name is {self.name}")
+        print(f"Flower colour is{self.colour}")
+
+
+f= Flower()
+
+f.type()
+
 
