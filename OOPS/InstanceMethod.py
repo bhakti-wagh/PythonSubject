@@ -1,0 +1,85 @@
+'''
+
+# way1
+class Flower:
+
+    flower_Name="Rose"
+
+    def type(self):
+        print(f"Flower Type is {self.flower_Name}")
+
+
+f=Flower()
+
+#using self object to access value :
+
+#1. by using classname modification
+
+Flower.flower_Name="Jasmin"
+
+#2. by using object modification
+
+Flower.flower_Name="lily"
+
+ 
+f.type()
+
+
+#It affected both classname or object
+#o/p: Flower Type is Jasmin
+
+'''
+
+'''
+#way2:
+
+class Flower:
+
+    flower_Name="Rose"
+
+    def type(self):
+        print(f"Flower Type is {Flower.flower_Name}")
+
+
+f=Flower()
+
+#using self object to access value :
+
+#1. by using classname modification
+
+#Flower.flower_Name="Mogra" #o/p: Flower Type is Mogra
+
+#1. by using classname modification
+
+f.flower_Name="lily"  #It not affected it show original data
+ 
+f.type()
+
+'''
+
+
+#way3:
+
+class Flower:
+
+    flower_Name="Rose"
+
+    def type(self):
+        print(f"Flower Type is {f.flower_Name}")
+
+
+f=Flower()
+
+#using self object to access value :
+
+#1. by using classname modification
+
+Flower.flower_Name="Mogra" #o/p: Flower Type is Mogra
+
+#1. by using classname modification
+
+#f.flower_Name="lily"  #It not affected it show original data
+ 
+f.type()
+
+
