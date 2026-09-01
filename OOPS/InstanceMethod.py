@@ -57,6 +57,7 @@ f.type()
 
 '''
 
+'''
 
 #way3:
 
@@ -82,4 +83,49 @@ Flower.flower_Name="Mogra" #o/p: Flower Type is Mogra
  
 f.type()
 
+
+'''
+
+
+class Employee:
+    sal=7000
+
+    def data(self):
+        #by using className
+        print(f"salary is {Employee.sal}")
+
+
+e=Employee()
+
+#Modification by className
+
+Employee.sal=8000
+#It will affected
+
+e.data() #salary is 8000
+
+
+
+class Employee:
+    sal=7000
+
+    def data(self):
+        #by using className
+        #print(f"salary is {Employee.sal}")
+
+        #by using object (recommended part)
+        print(f"salary is {self.sal}")
+
+
+e=Employee()
+
+#Modification by className
+
+Employee.sal=8000
+#It will affected
+
+#Modification by object
+e.sal=5000 #salary is 5000
+
+e.data() #salary is 8000
 
