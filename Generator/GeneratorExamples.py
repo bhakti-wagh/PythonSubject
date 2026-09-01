@@ -311,14 +311,13 @@ oper(["flipkart","Amazon",78,[2,3,4],78,9.87,(5,3),45.36])
 
 '''
 
+'''
+wap to generate only the string with odd length in given list
 
-def wish():
-    print("Good")
+l=["alexa","siri","google","cortrena"]
 
-wish #blank
-print(wish)#object add
-print(wish())
 
+''
 
             
 
