@@ -132,14 +132,12 @@ e.data() #salary is 8000
 '''
 
 
-
+'''
 class Flower:
 
     def type(self):
         self.name="Rose"
         self.colour="red"
-        Flower.data(f)
-        #self.data()
 
     def data(self):
         print(f"flower name is {self.name}")
@@ -149,5 +147,30 @@ class Flower:
 f= Flower()
 
 f.type()
+f.data()
+'''
+
+
+
+#instance method by using parameter
+
+class Student:
+
+    def info(self,name,age):
+        self.name=name
+        self.age=age
+        self.data()
+
+
+    def data(self):
+        print(self.name)
+        print(self.age)
+
+s = Student()
+
+s.info("sanem",23)
+
+
+
 
 

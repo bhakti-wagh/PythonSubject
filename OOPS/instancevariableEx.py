@@ -27,6 +27,7 @@ Animal.name="cat"
 a.data()
 '''
 
+'''
 
 class Book:
 
@@ -46,8 +47,10 @@ b=Book()
 
 b.info()
 b.data()
+''
 
-     
+
+
     
     
 
