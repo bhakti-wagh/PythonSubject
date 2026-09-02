@@ -112,7 +112,7 @@ b.withdrawl(200)
 '''
 
 
-
+'''
 class Flipkart:
 
     productName="laptop"
@@ -152,10 +152,84 @@ print(f.cost)
 print(f.TotalProduct)
 print(f.Add)
         
+ '''
+'''
+
+class Book:
+
+    def info(self):
+        self.name="Albatross"
+        self.auth="sanem"
+
+        #we not use print() :
+
+    def data(self):
+        print(f"Book name :{self.name}")
+        print(f"Author name:{self.auth}")
+
+
+
+b=Book()
+
+b.info()
+b.data()
     
+  '''
+
+'''
+def spam(**kwargs):
+    print(*kwargs) #Unpacked
+
+
+spam(a=1,b=2)
+'''
+'''
+def spam(**kwargs):
+    print(kwargs) #Unpacked
+
+
+spam(a=1,b=2)
+
+'''
+
+'''
+def spam(*args):
+    print(args)  #Packed format
+    #print(*args)  #unPacked format
+spam()
+spam(1)
+spam(1,2,3,4,5)
+spam("abc",[1,2,3],True,False,{567,90},{5:9})
+
+'''
+
+'''
+
+def wish():
+    yield "good"
+
+new=wish()
+
+wish #blankspace
+print(wish)# function object add
+print(wish()) #Generator object add
+print(new)
+print(next(new))
+'''
+
+
+'''
+def oper(a,b):
+    yield a+b,a-b
+
+new=oper(10,5)
+print(next(new))
+'''
+
+def oper(a,b):
+    return a+b,a-b
+
+new=oper(20,5)
+print(new)
+
     
-    
-
-
-
-

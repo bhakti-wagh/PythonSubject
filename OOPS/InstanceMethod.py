@@ -151,7 +151,7 @@ f.data()
 '''
 
 
-
+'''
 #instance method by using parameter
 
 class Student:
@@ -169,8 +169,54 @@ class Student:
 s = Student()
 
 s.info("sanem",23)
+'''
+
+'''
+class Bank:
+
+    name="SBI"
+    branch="pune"
+    date="16aug"
+    
+
+b=Bank()
+#by using className access
+print(Bank.name)#SBI
+print(Bank.branch)#pune
+print()
+#by using object access
+
+print(b.date)#16aug
+
+'''
 
 
+
+'''
+class Bank:
+
+    name="SBI"
+    branch="pune"
+    date="16aug"
+    
+
+b=Bank()
+b1=Bank()
+print(Bank.__dict__)
+'''
+
+'''
+class Greeting:
+    def say_hello(self,name):
+        print(f"Hello ,{name}! welcomt to python")
+
+
+g1=Greeting()
+
+g1.say_hello("bhakti")
+Greeting.say_hello(g1,"Sushil")
+'''
+        
 
 
 
