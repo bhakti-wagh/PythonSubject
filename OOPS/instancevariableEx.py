@@ -25,8 +25,31 @@ Animal.name="cat"
 #If we pass object in access part then it will modify 
 
 a.data()
-''''
+'''
 
+
+class Book:
+
+    def info(self):
+        self.name="Albatross"
+        self.auth="sanem"
+
+        #we not use print() :
+
+    def data(self):
+        print(f"Book name :{self.name}")
+        print(f"Author name:{self.auth}")
+
+
+
+b=Book()
+
+b.info()
+b.data()
+
+     
+    
+    
 
 
 
