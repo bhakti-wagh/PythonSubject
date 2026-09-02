@@ -81,10 +81,77 @@ b.Deposite()
 b.withdrawl()
 '''
 
+'''
+#with parameter and without paramter
+class Bank:
+
+    def Total_Balance(self):
+        self.amount=500
+
+        print(f"Total balance is :{self.amount}")
+
+    def Deposite(self,bal):
+        
+
+        self.amount+=self.bal
+        print(f"After the deposite total amount is:{self.amount}")
+
+
+    def withdrawl(self,bal):
+        
+
+        self.amount-=self.bal
+        print(f"After withdral:{self.amount}")
+
+
+b=Bank()
+
+b.Total_Balance()
+b.Deposite(500)
+b.withdrawl(200)
+'''
 
 
 
 class Flipkart:
+
+    productName="laptop"
+    cost=25000
+    TotalProduct=3
+    Add="pune"
+
+
+    def Product_data(self):
+        print(f"product name is:{self.productName}")
+        print(f"Total cost is :{self.cost}")
+        print(f"Total product is:{self.TotalProduct}")
+
+
+    def Address(self):
+        print(f"Current Address is :{self.Add}")
+
+
+    def Modification_data(self,new_cost,TP):
+        self.cost=new_cost
+        self.TotalProduct=TP
+
+        print(f"Updated cost price is:{self.cost}")
+        print(f"Updated total product is :{self.TotalProduct}")
+        
+
+
+f=Flipkart()
+
+f.Product_data()
+f.Address()
+
+f.Modification_data(50000,20)
+
+print(f.productName)
+print(f.cost)
+print(f.TotalProduct)
+print(f.Add)
+        
     
     
     
