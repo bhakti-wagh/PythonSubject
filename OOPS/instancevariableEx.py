@@ -51,9 +51,41 @@ b.data()
 
 
 
+'''
+#without parameter
+class Bank:
+
+    def Total_Balance(self):
+        self.amount=500
+
+        print(f"Total balance is :{self.amount}")
+
+    def Deposite(self):
+        self.bal=500
+
+        self.amount+=self.bal
+        print(f"After the deposite total amount is:{self.amount}")
+
+
+    def withdrawl(self):
+        self.bal=200
+
+        self.amount-=self.bal
+        print(f"After withdral:{self.amount}")
+
+
+b=Bank()
+
+b.Total_Balance()
+b.Deposite()
+b.withdrawl()
+'''
 
 
 
+
+class Flipkart:
+    
     
     
 
