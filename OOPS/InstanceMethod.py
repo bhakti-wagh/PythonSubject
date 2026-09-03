@@ -403,6 +403,7 @@ b=Book()
 b.data()
 '''
 
+'''
 class Book:
 
     def data(self):
@@ -423,9 +424,79 @@ b=Book()
 #b.info("ghk")
 
 Book.info("ghk")
+'''
+
+'''
+class Test:
+    def spam(self):
+
+        self.x=100
+
+        print(self.x)
 
 
-    
+
+
+t=Test()
+
+
+t.x=400
+#100
+t.spam()
+
+
+t.spam()
+
+#print(t.x)
+
+t.x=700
+print(t.x)
+
+print(t.x)
+
+
+'''
+
+
+'''
+class Test:
+
+    def show(self):
+        self.x=700
+        self.y=1000
+
+        
+
+        self.x=1700
+        self.y=2000
+        print(self.x)
+        print(self.y)
+
+
+        
+
+
+t=Test()
+
+t.show()
+
+'''
+
+
+class T:
+    def show(self):
+        self.x=700
+
+        print(self.x)
+
+
+t=T()
+
+t.x=400
+t.show() #700
+t.x=500
+print(t.x)
+
 
 
 
