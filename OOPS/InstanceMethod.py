@@ -216,7 +216,218 @@ g1=Greeting()
 g1.say_hello("bhakti")
 Greeting.say_hello(g1,"Sushil")
 '''
+
+
+'''
+class Person:
+
+    def data(self,name,age):
+        self.name=name
+        self.age=age
+
+        print(f"Person name is:{self.name}")
+        print(f"age is :{self.age}")
+
+p=Person()
+
+p.data("bhakti",22)
+
+#o/p
+Person name is:bhakti
+age is :22
+'''
+
+
+'''
+class Dog:
+
+    name="vanki"
+    breed="ameri"
+
+    def data(self):
+        print(f"Dog name is :{self.name}")
+        print(f"Dog breed is:{self.breed}")
+
+d=Dog()
+
+d.data()
+#o/p:
+Dog name is :vanki
+Dog breed is:ameri
+
+'''
+
+
+'''
+class Fan:
+
+    def data(self,brand,price):
+        #self.brand=brand
+        #self.price=price
+        print(f"brand name is:{brand}")
+        print(f"price is:{price}")
+
+f=Fan()
+
+f.data("bajaj",25000)
+#o/p
+brand name is:bajaj
+price is:25000
+
+'''
+
+'''
+class Employee:
+
+    def info(self,name ,salary):
+        self.name=name
+        self.salary=salary
+
+        print(f"employee name :{self.name}")
+        print(f"before increase salary:{self.salary}")
+
+    def increase(self,salary):
+        self.salary+=salary
+
+        print(f"Increase salary by:{self.salary}")
+
+
+e=Employee()
+
+e.info("bhakti",10000)
+e.increase(5000)
+
+
+#o/p
+employee name :bhakti
+before increase salary:10000
+Increase salary by:15000
+'''
+
+
+'''
+class GamePlayer:
+
+    def data(self,name,score):
+        self.name=name
+        self.score=score
+
+        print(f"player name:{self.name}")
+        print(f"score is:{self.score}")
+
+
+    def incre(self,score):
+
+        self.score+=score
+
+        print(f"Increase score:{self.score}")
+
+
+
+g=GamePlayer()
+
+g.data("sushil",100)
+
+g.incre(200)
+
+#o/p:
+player name:sushil
+score is:100
+Increase score:300
+
+'''
+
+
+
+
+#access and modify class variable
+'''
+class Student:
+
+    name="bhakti"
+
+    def data(self):
+
+        print(self.name)
+
+
+
+s=Student()
+
+#s.name="apeksha"
+
+Student.name="apeksha"
+
+s.data()
+
+
+'''
+'''
+class Student:
+
+    name="bhakti"
+
+    def data(self):
+
+        print(Student.name)
+
+
+
+s=Student()
+
+s.name="apeksha"
+
+#Student.name="apeksha"
+
+s.data()
+
+'''
+
+
+'''
+class Book:
+
+    def data(self):
+        self.name="rosee"
+
+        print(self.name)
+
+
+        #1way
+
+        self.name="catee"
+        print(self.name)
+
+b=Book()
+
+b.data()
+'''
+
+class Book:
+
+    def data(self):
+        self.x="abc"
+
+        print(self.x)
+
+    def info(self,new):
+
+        self.x=new
+
+        print(self.x)
+
+
+b=Book()
+
+
+#b.info("ghk")
+
+Book.info("ghk")
+
+
+    
+
+
+
+
         
-
-
-
