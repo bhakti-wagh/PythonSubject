@@ -98,6 +98,32 @@ Flower.data()#Rose
 #        2. using classname
 
 # both will be work
+'''
+
+class Bank:
+
+    branch="pune"
+
+    @classmethod
+
+    def data(cls):
+        #print(cls.branch)
+
+        #Modification inside by cls
+        cls.branch="Beed"
+        #print(cls.branch) #working
+
+        #Modifcation inside by classname
+        Bank.branch="kothrud"
+        #print(Bank.branch)#Working
+
+b=Bank()
+
+b.data()
+'''
+
+
+
 
 
 #Modification class variable outside of class
@@ -105,7 +131,7 @@ Flower.data()#Rose
 # by the help of object it will won't work
 
 
-
+'''
 class Flower:
 
     name="Rose"
@@ -128,7 +154,7 @@ f=Flower()
 Flower.name="lily"
 f.data()#lily
 
-
+'''
 
 
 
