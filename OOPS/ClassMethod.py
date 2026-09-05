@@ -92,4 +92,45 @@ Flower.data()#Rose
 
 
 
-#Modification in class method
+#Modification class variable inside  class method
+
+#2 ways: 1. using cls
+#        2. using classname
+
+# both will be work
+
+
+#Modification class variable outside of class
+#   1. only classname
+# by the help of object it will won't work
+
+
+
+class Flower:
+
+    name="Rose"
+
+    @classmethod
+    def data(cls):
+        print(cls.name)
+
+f=Flower()
+
+#f.data()#Rose
+
+#Modify with object
+
+#f.name="lily"
+
+
+#Modify with classname
+
+Flower.name="lily"
+f.data()#lily
+
+
+
+
+
+
+
