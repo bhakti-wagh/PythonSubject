@@ -80,7 +80,7 @@ x=Car()
 
 #Ex6: constructor + instance method without parameter
 
-
+'''
 class Car:
 
     def __init__(self):
@@ -97,6 +97,84 @@ class Car:
 
 x=Car()
 
+x.show()
+
+'''
+
+'''
+#Calling one method into another
+class Car:
+
+    def __init__(self):
+
+        #instance variable
+
+        self.name="BMW"
+        self.color="Red"
+        self.cost="1cr"
+
+        self.show()
+
+    def show(self):
+        print(f"my car name :{self.name}\n my car color: {self.color}\n car cost is:{self.cost}")
+
+
+x=Car()
+
+'''
+
+'''
+class Room3:
+
+    def __init__(self,total_std,Tg,Tb,sub):
+
+        self.total_std=total_std
+        self.Tg=Tg
+        self.Tb=Tb
+        self.sub=sub
+
+        print(f"Total students in class {self.total_std}\n"
+              f"Total girls count {self.Tg}\n"
+              f"Total boys count {self.Tb}\n"
+              f"Subject is {self.sub}")
+
+
+r=Room3(45,20,25,"python")
+print()
+r1=Room3(50,30,20,"sql")
+print()
+r2=Room3(60,30,30,"web")
+'''
+
+class Room3:
+
+    def __init__(self,total_std,Tg,Tb,sub):
+
+        self.total_std=total_std
+        self.Tg=Tg
+        self.Tb=Tb
+        self.sub=sub
+
+        #self.classinfo()
+
+       
+
+    def classinfo(self):
+         print(f"Total students in class {self.total_std}\n"
+              f"Total girls count {self.Tg}\n"
+              f"Total boys count {self.Tb}\n"
+              f"Subject is {self.sub}")
         
+
+
+e=Room3(100,50,50,"manual")
+e.classinfo()
+r=Room3(45,20,25,"python")
+r.classinfo()
+
+    
+        
+        
+
 
 
