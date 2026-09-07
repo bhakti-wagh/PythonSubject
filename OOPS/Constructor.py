@@ -145,7 +145,7 @@ r1=Room3(50,30,20,"sql")
 print()
 r2=Room3(60,30,30,"web")
 '''
-
+'''
 class Room3:
 
     def __init__(self,total_std,Tg,Tb,sub):
@@ -172,9 +172,94 @@ e.classinfo()
 r=Room3(45,20,25,"python")
 r.classinfo()
 
-    
-        
+'''
+
+'''
+class Room3:
+
+    def __init__(self,total_std,Tg,Tb,sub,*args):
+
+        self.total_std=total_std
+        self.Tg=Tg
+        self.Tb=Tb
+        self.sub=sub
+        self.args=args
+
+        #self.classinfo()
+
+       
+
+    def classinfo(self):
+         print(f"Total students in class {self.total_std}\n"
+              f"Total girls count {self.Tg}\n"
+              f"Total boys count {self.Tb}\n"
+              f"Subject is {self.sub}\n"
+              f"Extra information {self.args} ")
         
 
+
+e=Room3(100,50,50,"manual","*",90)
+e.classinfo()
+    
+ '''
+'''
+class Room3:
+
+    def __init__(self,total_std,Tg,Tb,sub,**kwargs):
+
+        self.total_std=total_std
+        self.Tg=Tg
+        self.Tb=Tb
+        self.sub=sub
+        self.kwargs=kwargs
+
+        #self.classinfo()
+
+       
+
+    def classinfo(self):
+         print(f"Total students in class {self.total_std}\n"
+              f"Total girls count {self.Tg}\n"
+              f"Total boys count {self.Tb}\n"
+              f"Subject is {self.sub}"
+               f"Extra information {self.kwargs} ")
+        
+
+
+e=Room3(100,50,50,"manual",mockrating="*",marks=90)
+e.classinfo()
+        
+'''
+
+
+
+class Bank:
+
+    def __init__(self):
+
+        self.bal=0.0
+
+    def deposite(self,amt):
+
+        print(f"before deposite total amount : {self.bal}")
+
+        self.bal+=amt
+
+        print(f"After deposite total amount : {self.bal}")
+
+
+    def withdrawl(self,amt):
+        self.bal=self.bal-amt
+
+        print(f"After withdrawl total amount is :{self.bal}")
+
+b=Bank()
+
+b.deposite(200)
+
+b.withdrawl(50)
+        
+        
+        
 
 
