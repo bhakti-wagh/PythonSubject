@@ -254,6 +254,8 @@ class Bank:
         print(f"After withdrawl total amount is :{self.bal}")
 
 b=Bank()
+Bank.bal=1000
+print(Bank.bal) #Not affected by the help of class name
 
 b.deposite(200)
 
