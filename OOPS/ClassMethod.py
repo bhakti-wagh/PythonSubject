@@ -159,4 +159,63 @@ f.data()#lily
 
 
 
+'''
+class Student:
+
+    def data(self):
+        self.math=50
+     
+
+        #print(self.math)
+     
+     
+
+
+s=Student()
+
+s.data()
+s.math=100
+print(s.math)
+
+'''
+
+'''
+class Wish:
+
+    greet="HB"
+
+    @classmethod
+    def send(cls):
+        print(cls.greet)
+
+
+w=Wish()
+
+w.greet="HA"
+print(w.greet)
+w.send()
+'''
+
+#without object creation calling classmethod
+
+class Hotel:
+
+    @classmethod
+    def display(cls):
+        print("Hotel class")
+
+Hotel.display()#Hotel class
+
+
+#with object creation calling classmethod
+
+class Hotel:
+
+    @classmethod
+    def display(cls):
+        print("Hotel pune")
+
+h=Hotel()
+h.display()
+Hotel.display()
 
