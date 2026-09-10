@@ -2,6 +2,7 @@
 #Single Level inheritance:
 
 
+z
 class Dad:
     cash=10000
 
@@ -10,6 +11,8 @@ class Dad:
 
 
 class Child(Dad):
+
+    bike_name="BMW"
 
     def Home(self):
         print("Dad's Gift")
@@ -21,10 +24,13 @@ d.villa()
 d.Home()
 print(d.cash)
 
+print(dir(Dad))
+
+
+#print(dir(Child))
 '''
 
 
-print(dir(Dad))
 
 
 
