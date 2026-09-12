@@ -148,7 +148,7 @@ r.Information("qspider","Python Stack",45000)
 
 
 '''
-
+'''
 class Employee:
 
     def __init__(self,ComName,TotalMemeber,HighestPack):
@@ -200,4 +200,37 @@ class Rules(Staremp):
 
 r=Rules('11am','6pm','sde')
 
+'''
 
+
+
+
+
+
+class Bank:
+
+    def Customer_info(self,**kwargs):
+        self.wargs=kwargs
+
+
+    def data(self):
+        print(self.wargs)
+
+
+class info(Bank):
+
+    def Customer_info(self,**kwargs):
+        super().Customer_info(**kwargs)
+        #self.cinfo()
+    
+
+
+    def cinfo(self):
+         print(self.wargs)
+
+i=info()
+i.Customer_info(name="bhakti",amt=4500,withdrawl=200)
+i.data()
+        
+
+    
