@@ -204,8 +204,7 @@ r=Rules('11am','6pm','sde')
 
 
 
-
-
+'''
 
 class Bank:
 
@@ -232,5 +231,131 @@ i=info()
 i.Customer_info(name="bhakti",amt=4500,withdrawl=200)
 i.data()
         
+'''
+
+
+'''
+class Hotel:
+
+    def __init__(self,hn,area,pin):
+        self.hn=hn
+        self.area=area
+        self.pin=pin
+        self.Address()
 
     
+
+    def Address(self):
+        print(f"Hotel name :----->{self.hn}")
+        print(f"Area is : ------>{self.area}")
+        print(f"pincode is :----->{self.pin}")
+
+
+class Customer:
+    
+    def __init__(self,cname,tmember,tbill,orderno):
+        self.cname=cname
+        self.tmember=tmember
+        self.tbill=tbill
+        self.orderno=orderno
+        self.Address()
+
+        def Address(self):
+            print(f"Customer name is :-------> {self.cname}")
+            print(f"Total memeber is :-------> {self.tmember}")
+            print(f"Total bill :------> {self.tbill}")
+            print(f"Order number is :-------> {self.orderno}")
+
+
+    
+class Review(Hotel,Customer):
+
+    def __init__(self,rating,tipbill):
+        
+        self.rating=rating
+        self.tipbill=tipbill
+        super().__init__("classy","kothrud",411038)
+        Customer.__init__(self,"Bhakti",2,5000,1)
+        self.Address()     
+
+
+    def Address(self):
+        
+        print(f"Rating :------> {self.rating}")
+        print(f"Tip bill:-----> {self.tipbill}")
+
+
+r=Review('5star',20)
+
+    
+ '''
+
+'''
+
+class gradpa:
+
+    def __init__(self,grandpa_name,gr_age):
+        self.grandpa=grandpa_name
+        self.age=gr_age
+        self.show()
+
+
+    def show(self):
+        print(f"gr name :{self.grandpa}")
+        print(f"age is :{self.age}")
+
+
+class father(gradpa):
+
+    def __init__(self,fa_name,fa_age):
+        
+        self.fa_name=fa_name
+        self.fa_age=fa_age
+
+        self.show()
+
+    def show(self):
+        print(f"fa name :{self.fa_name}")
+        print(f"fa age :{self.fa_age}")
+        super().__init__("m",45)
+
+
+f=father("n",25)
+ '''
+
+
+class gradpa:
+
+    def __init__(self, grandpa_name, gr_age):
+        self.grandpa = grandpa_name
+        self.age = gr_age
+        gradpa.show(self)
+
+    def show(self):
+        print(f"gr name :{self.grandpa}")
+        print(f"age is :{self.age}")
+
+
+class father(gradpa):
+
+    def __init__(self, fa_name, fa_age):
+        self.fa_name = fa_name
+        self.fa_age = fa_age
+
+        self.show()
+
+    def show(self):
+        print(f"fa name :{self.fa_name}")
+        print(f"fa age :{self.fa_age}")
+        super().__init__("m", 45)
+
+
+
+class son(gradpa,father):
+
+    def __init__(self,son_name,age,fa_name,fa_age,grandpa_name,gr_age):
+        
+
+        
+
+f = father("n", 25)
