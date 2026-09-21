@@ -35,7 +35,7 @@ class Dog:
 
 
 
-def display(duck):
+def display(duck):g
 
     duck.Swim()
     duck.Speak()
