@@ -66,7 +66,7 @@ elif bal*01
 
 '''
 
-
+'''
 
 class Bank:
     def __init__(self,c_name,bal,deposite):
@@ -97,8 +97,154 @@ class Details(Bank):
 
 d=Details()
 
+'''
+
+'''
+class Vehicle:
+
+    def start(self,vname):
+        self.vname=vname
+        print(f"Vechicle name :{self.vname}")
+
+
+class Bike(Vehicle):
+
+    def start(self,bname):
+        super().start('car')
+        self.bname=bname
+        print(f"Bike name:{self.bname}")
+
+
+b=Bike()
+b.start('splinder')
+
+'''
+
+'''
+class BankAccount:
+
+    def __init__(self,hname,bal):
+        self.hname=hname
+        self.bal=bal
+        self.show()
+
+    def show(self):
+        print(f"Holder name :{self.hname}")
+        print(f"Balance :{self.bal}")
 
 
 
+class SavingAccount(BankAccount):
+
+    def __init__(self,irate):
+        super().__init__('bhakit',5000)
+        self.irate=irate
+        self.show2()
+
+
+    def show2(self):
+        print(f"Interest rate :{self.irate}")
 
         
+
+class SeniorSavingAccount(SavingAccount):
+
+    def __init__(self,age):
+
+        super().__init__(0.1)
+        self.age=age
+
+        if age>=60:
+            print("You are eligible for extra interest")
+            print(self.bal*self.irate)
+        else:
+            print("You are not eligible for extra interest")
+
+        print(f"age :{self.age}")
+        
+s=SeniorSavingAccount(65)
+''' 
+'''
+class Person:
+
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+        
+
+    def details(self):
+        print(f"Person name:{self.name}")
+        print(f"Age :{self.age}")
+
+
+class Company:
+
+    def __init__(self,cname,sal):
+        self.cname=cname
+        self.sal=sal
+        
+
+
+    def details(self):
+        print(f"Company name:{self.cname}")
+        print(f"Salary is :{self.sal}")
+
+
+class Employee(Person,Company):
+
+    def __init__(self):
+        Person.__init__(self,'bhakit',22)
+        Company.__init__(self,'qspider',5000)
+        self.show()
+
+
+    def show(self):
+        Person.details(self)
+        Company.details(self)
+
+
+
+e=Employee()
+'''
+
+
+
+'''
+class Company:
+
+    def __init__(self,cname):
+        self.cname=cname
+
+        print(f"Company name:{self.cname}")
+
+
+
+class Employee(Company):
+
+    def __init__(self,Eid,Ename):
+        super().__init__('qspider')
+        self.Eid=Eid
+        self.Ename=Ename
+        self.show()
+
+
+    def show(self):
+        print(f"Employee id :{self.Eid}")
+        print(f"Employee name :{self.Ename}")
+
+
+
+class Manager(Company):
+
+    def __init__(self,mname,dept):
+        self.mname=mname
+        self.dept=dept
+
+        print(f"Manager name :{self.mname}")
+        print(f"Department :{self.dept}")
+
+
+
+e=Employee('E01','sushil')
+m=Manager('bhakti','IT')
+'''
