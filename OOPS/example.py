@@ -248,3 +248,84 @@ class Manager(Company):
 e=Employee('E01','sushil')
 m=Manager('bhakti','IT')
 '''
+
+'''
+parent class=Book:-> title, author,isbn,avilable
+Method=get_details,mark_unavailble,mark_available
+
+child class=Borrowed Book:-> borrower_name,duedate
+Methods=borrow():-> borrowedetails, marks the book as borrowed
+Return _book() marks avil, remove borrower details
+
+'''
+
+class Book:
+
+    def __init__(self, title,author,isbn,avail):
+        self.title=title
+        self.author=author
+        self.isbn=isbn
+        self.avail=avail
+    
+
+
+    def get_details(self):
+        print(f"Book title :{self.title}")
+        print(f"Author of book:{self.author}")
+        print(f"Isbn :{self.isbn}")
+        print(f"Available :{self.avail}")
+
+
+    def marks_unavailable(self):
+        self.avail=False
+        print("Marks the book as not available.")
+
+
+    def marks_available(self):
+        self.avail=True
+        print("Marks the book as available.")
+
+
+class BorrwedBook(Book):
+
+    def __init__(self,borrower_name,due_date):
+        super().__init__('Albatross', 'sanem', 4654654, False)
+        self.borrower_name=borrower_name
+        self.due_date=due_date
+        self.borrow()
+
+
+    def borrow(self):
+
+        if self.avail:
+             self.marks_unavailable()
+             print(f"Borrower name :{self.borrower_name}")
+             print(f"due_date:{self.due_date}")
+
+        else:
+            print("Book is already borrwoed")
+
+
+    def return_book(self):
+        self.marks_available()
+        self.borrower_name 
+        self.due_date 
+        print("Book returned.")
+
+        
+
+b=BorrwedBook('bhakti','09/sept') 
+
+b.get_details()
+print()
+
+b.borrow()
+print()
+
+
+
+
+
+
+
+
