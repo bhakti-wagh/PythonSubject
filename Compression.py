@@ -38,3 +38,12 @@ print([(i,len(i)) for i in a.split()])
 
 a='abcde abc abcd abcdef'
 print([(i,len(i)) if len(i)%2==0 else (i,i) for i in a.split()])
+
+
+
+
+
+
+
+
+
