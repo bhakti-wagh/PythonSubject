@@ -230,6 +230,66 @@ d.EID("B001")
 
 
 
+class SBI(ABC):
+
+    @abstractmethod
+
+    def __init__(self,HN,bal,acc_num):
+        pass
+
+
+    @abstractmethod
+    def deposite(self,amount):
+        pass
+
+    @abstractmethod
+    def withdrawl(self,amount):
+        pass
+
+
+
+
+
+class ATM(SBI):
+
+    def __init__(self,HN,bal,acc_num):
+        self.HN=HN
+        self.bal=bal
+        self.acc_num=acc_num
+        print(f"Holder name :{self.HN}")
+        print(f"Balance :{self.bal}")
+        print(f"Account number:{self.acc_num}")
+
+
+
+    def deposite(self,amount):
+            self.amount=amount
+
+            print(f"Before deposite total amount {self.bal}")
+            self.bal+=amount
+
+            print(f"after deposite  amount:{self.bal}")
+            
+
+    
+    def withdrawl(self,amount):
+        self.bal-=amount
+       
+        print(f"Withdrawl amount:{self.bal}")
+
+
+
+
+a=ATM("bhakti",10000,123456789121)
+
+a.deposite(5000)
+
+a.withdrawl(2000)
+
+
+        
+        
+
 
 
     
